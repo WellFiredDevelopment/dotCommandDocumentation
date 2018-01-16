@@ -9,7 +9,7 @@ Step By Step
     installing.rst
     quick_start.rst
     ui_overview.rst
-    inspect.rst
     logs_and_filters.rst
+    inspect.rst
     custom_commands.rst
     skins_and_settings.rst
