@@ -1,5 +1,5 @@
-.Profile API
-=============
+.Command API
+============
 
 .. toctree::
    :maxdepth: 1

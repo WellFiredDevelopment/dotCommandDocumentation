@@ -1,6 +1,6 @@
 # .Command documentation
 
-This repository contains the source files of [.Command](hhttp://dotcommand-documentation.readthedocs.io/en/stable/)'s documentation,  in reStructuredText markup language (reST).
+This repository contains the source files of [.Command](http://dotcommand-documentation.readthedocs.io/en/stable/)'s documentation,  in reStructuredText markup language (reST).
 
 They are meant to be parsed with the [Sphinx](http://sphinx-doc.org/) documentation builder to build the HTML documentation on [.Command](http://dotcommand-documentation.readthedocs.io/en/stable/)'s documentation page.
 
