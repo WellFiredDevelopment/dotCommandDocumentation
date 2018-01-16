@@ -1,3 +1,5 @@
+.. _learn_step_by_step_ui_overview:
+
 UI Overview
 ===========
 
@@ -35,14 +37,18 @@ Here you can find a selection of commonly used actions.
 * All Commands
     This will bring up a quick action window, allowing users to interact with .Command without typing.
 
+
+
+
+.. _learn_step_by_step_ui_overview_log_history:
+
 Log History
 ^^^^^^^^^^^
 
 Over time the Log History will fill up with your applications logs. these items will be color coded to show you which type
 of message you are receiving, this works similar to Unity's Console Window.
 
-Each item in this list can be clicked (or touched) to bring up a separate window showing a full callstack. This is shown
-in the `Entry Log Window`_
+Each item in this list can be clicked (or touched) to bring up a separate window showing a full callstack.
 
 Input Field
 ^^^^^^^^^^^
@@ -64,6 +70,10 @@ As you type in the `Input Field`_, suggestions will appear here. These suggestio
 * Command Parameters after having input a command. Most built in c# types will be automatically parsed and presented to
 the user in the suggestion box (including enums).
 
+
+
+.. _learn_step_by_step_ui_overview_filter_window:
+
 Filter Window
 -------------
 
@@ -77,18 +87,21 @@ you can add your own custom filters to .Command.
 Filters can be toggled on individually and also simultaneously, in the example above, if you toggled on Info and
 Warning, your `Log History`_ would only show messages with the Info or Warning Filter.
 
+
+
+.. _learn_step_by_step_ui_overview_all_commands_window:
+
 All Commands Window
 -------------------
 
 The all commands window allows you to quickly see and execute all commands exposed to .Command
 
-.. image:: images/allcommands.svg
+.. image:: images/allcommandswindow.svg
 
-Entry log Window
-----------------
+From this window, you can simply click any command you'd like to execute and .Command will do the rest for you.
 
 To be continued.....
 --------------------
 
-In the next section you'll find out how to add your own custom logs filters to .Command and how you can filter those
-with ease.
+In the next section you'll find out how to add your own custom filters to .Command and how you can filter use those
+in your game.

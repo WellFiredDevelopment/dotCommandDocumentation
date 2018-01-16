@@ -10,6 +10,6 @@ Step By Step
     quick_start.rst
     ui_overview.rst
     logs_and_filters.rst
-    inspect.rst
+    built_in_commands.rst
     custom_commands.rst
     skins_and_settings.rst

@@ -9,13 +9,21 @@ with no work, and the other is a bit more manual, but provides you more control.
 Its recommended that you follow the `Slightly less Quick Start`_ for more control over .Command, but for those of you
 who are unfamiliar with writing code (or simply don't want to), you can get started with the `Quickest Start`_ section.
 
+
+
+.. _learn_step_by_step_quick_start_quickest_start:
+
 Quickest Start
 --------------
 Simply drag the prefab DebugConsoleLoader from the /WellFired/WellFired.Command.Prefabs directory into your scene and
-press play. You can now toggle .Command with the tilde (~) key, or by pressing the bottom at the top left of the screen.
+press play. You can now toggle .Command with the tilde (~) key, or by pressing the button at the top left of the screen.
 Once open .Command should look something like this.
 
 .. image:: images/console.svg
+
+
+
+.. _learn_step_by_step_quick_start_slightly_less_quick_start:
 
 Slightly less Quick Start
 -------------------------
