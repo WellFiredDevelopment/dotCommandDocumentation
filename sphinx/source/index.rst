@@ -27,8 +27,21 @@ The main documentation for the site is organized into the following sections:
     :caption: Getting Started
     :name: sec-learn
 
-    learn/step_by_step/index
-    learn/advanced/index
+    learn/step_by_step/installing
+    learn/step_by_step/quick_start
+    learn/step_by_step/ui_overview
+    learn/step_by_step/logs_and_filters
+    learn/step_by_step/built_in_commands
+    learn/step_by_step/custom_commands
+    learn/step_by_step/skins_and_settings
+
+
+.. toctree::
+    :maxdepth: 1
+    :caption: Advanced
+    :name: sec-advanced
+
+    learn/advanced/suggestions
 
 .. toctree::
     :maxdepth: 1

@@ -67,10 +67,7 @@ As you type in the `Input Field`_, suggestions will appear here. These suggestio
 
 * Commands whilst using the `Input Field`_
 
-* Command Parameters after having input a command. Most built in c# types will be automatically parsed and presented to
-the user in the suggestion box (including enums).
-
-
+* Command Parameters after having input a command. Most built in c# types will be automatically parsed and presented to the user in the suggestion box (including enums).
 
 .. _learn_step_by_step_ui_overview_filter_window:
 
@@ -86,8 +83,6 @@ you can add your own custom filters to .Command.
 
 Filters can be toggled on individually and also simultaneously, in the example above, if you toggled on Info and
 Warning, your `Log History`_ would only show messages with the Info or Warning Filter.
-
-
 
 .. _learn_step_by_step_ui_overview_all_commands_window:
 

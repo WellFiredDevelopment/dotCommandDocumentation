@@ -78,4 +78,4 @@ And Then?
 ---------
 
 Now you've seen an overview of all the commands available to you out of the box with .Command, it's time to learn about
-customisation and skinning.
+how to add your own completely custom commands to .Command.

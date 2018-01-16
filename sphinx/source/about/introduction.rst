@@ -27,7 +27,6 @@ This documentation is organised in five sections, the way it is split up should 
 - The :ref:`sec-general` section contains this introduction as well as general information on the tool It also contains
   the :ref:`doc_faq`.
 - The :ref:`sec-learn` section is the the main entry point of this documentation, as it contains all the necessary
-  information on using the tool. It starts with the :ref:`Step by step<toc-learn-step_by_step>` tutorial which should be
-  the entry point for all new users.
+  information on using the tool.
 - Finally, the :ref:`sec-class-ref` is the documentation of the .Command API. It is generated automatically from a
   files in the main repository, and the generated files of the documentation are therefore not meant to be modified.
