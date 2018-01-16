@@ -80,6 +80,10 @@ Warning, your `Log History`_ would only show messages with the Info or Warning F
 All Commands Window
 -------------------
 
+The all commands window allows you to quickly see and execute all commands exposed to .Command
+
+.. image:: images/allcommands.svg
+
 Entry log Window
 ----------------
 
