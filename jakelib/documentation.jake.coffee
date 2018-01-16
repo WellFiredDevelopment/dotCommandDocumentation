@@ -3,9 +3,10 @@ globals = require('./modules/globals')
 wtask = require('./modules/globals').wtask
 
 namespace 'documentation', ->
+
     desc 'Converts our API documentation from doxygen format into a format that sphinx understands'
     wtask 'convert', { async: true }, (c) ->
-        runner = new doxygen2sphinx globals.config().sphinxInputDir, globals.config().sphinxOutputDir
+        runner = new doxygen2sphinx globals.config().sphinxInputDir, globals.config().sphinxOutputDir, globals.config().sphinxProjectName
 
         runner.on 'data', (data) ->
             WellFired.info data

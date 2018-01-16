@@ -1,7 +1,8 @@
 global.config = {
     name:           'WellFired.Command.Documentation',
     sphinxInputDir: 'xml',
-    sphinxOutputDir:'sphinx/source'
+    sphinxOutputDir:'sphinx/source',
+    sphinxProjectName: 'dotCommand'
 }
 
 module.exports = {
