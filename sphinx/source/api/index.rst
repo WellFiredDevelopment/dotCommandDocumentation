@@ -1,5 +1,5 @@
-.Command API
-============
+dotCommand API
+===============
 
 .. toctree::
    :maxdepth: 1

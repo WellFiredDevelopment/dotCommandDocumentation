@@ -26,7 +26,7 @@ Breakdown
 
     **Description**
 
-        This method will be used by the development console to determine the auto complete values that should be used. 
+        This method will be used by the .:ref:`Command<namespacewellfired_command>` to determine the auto complete values that should be used. 
 
     **Parameters**
 

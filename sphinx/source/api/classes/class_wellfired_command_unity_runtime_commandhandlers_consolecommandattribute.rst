@@ -8,7 +8,7 @@ ConsoleCommandAttribute
 Description
 ------------
 
-Place this attribute on any method that you want exposed to the Development :ref:`Console<namespacewellfired_command_unity_runtime_console>`. 
+Place this attribute on any method that you want exposed to the .:ref:`Command<namespacewellfired_command>`. 
 
 Properties
 -----------
@@ -28,7 +28,7 @@ Breakdown
 
     **Description**
 
-        The Name of this attribute. The Development :ref:`Console<namespacewellfired_command_unity_runtime_console>` will use this as the actual command the user must type of select. 
+        The Name of this attribute. .:ref:`Command<namespacewellfired_command>` will use this as the actual command the user must type of select. 
 
 .. _classwellfired_command_unity_runtime_commandhandlers_consolecommandattribute_1a03fa89b46071ebce58c6fa7a2b3a2729:
 

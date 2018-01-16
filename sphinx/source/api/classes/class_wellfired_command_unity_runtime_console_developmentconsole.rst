@@ -8,7 +8,7 @@ DevelopmentConsole
 Description
 ------------
 
-:ref:`Console<namespacewellfired_command_unity_runtime_console>` is a MonoBehaviour that opens an in game Development :ref:`Console<namespacewellfired_command_unity_runtime_console>`, this console can call any Property / Method that is marked up with the ConsoleCommandAttribute. 
+:ref:`Console<namespacewellfired_command_unity_runtime_console>` is a MonoBehaviour that opens an in game .:ref:`Command<namespacewellfired_command>`, this console can call any Property / Method that is marked up with the ConsoleCommandAttribute. 
 
 Properties
 -----------
@@ -78,7 +78,7 @@ Breakdown
 
     **Description**
 
-        Gets or sets the singleton instance of the Development :ref:`Console<namespacewellfired_command_unity_runtime_console>`. 
+        Gets or sets the singleton instance of the .:ref:`Command<namespacewellfired_command>`. 
 
 .. _classwellfired_command_unity_runtime_console_developmentconsole_1a87af00df9caf8a0cc0b3198daab7af29:
 
@@ -138,7 +138,7 @@ Breakdown
 
     **Description**
 
-        Call this method to load a single instance of the Development :ref:`Console<namespacewellfired_command_unity_runtime_console>`. You can then access the instance through the Instance property. 
+        Call this method to load a single instance of .:ref:`Command<namespacewellfired_command>`. You can then access the instance through the Instance property. 
 
 .. _classwellfired_command_unity_runtime_console_developmentconsole_1aaa4d6d3d89663175cbee1c727c0a4d2c:
 
@@ -146,7 +146,7 @@ Breakdown
 
     **Description**
 
-        This method will stop the Development :ref:`Console<namespacewellfired_command_unity_runtime_console>` from auto opening if an error is fired, you can still open it manually. 
+        This method will stop .:ref:`Command<namespacewellfired_command>` from auto opening if an error is fired, you can still open it manually. 
 
 .. _classwellfired_command_unity_runtime_console_developmentconsole_1ab6c36623f90e61264271089ebf616062:
 
@@ -166,13 +166,13 @@ Breakdown
 
     **Description**
 
-        You can call this method if you'd like to set input in the Development :ref:`Console<namespacewellfired_command_unity_runtime_console>` as though the user had typed it. 
+        You can call this method if you'd like to set input in .:ref:`Command<namespacewellfired_command>` as though the user had typed it. 
 
     **Parameters**
 
-        +-------------+----------------------------------------------------------------------------------------------------------+
-        |text         |The text to enter into the Development :ref:`Console<namespacewellfired_command_unity_runtime_console>`   |
-        +-------------+----------------------------------------------------------------------------------------------------------+
+        +-------------+---------------------------------------------------------------------+
+        |text         |The text to enter into .:ref:`Command<namespacewellfired_command>`   |
+        +-------------+---------------------------------------------------------------------+
         
 .. _classwellfired_command_unity_runtime_console_developmentconsole_1a3df66109f33271cd1cb18472b85dc046:
 
