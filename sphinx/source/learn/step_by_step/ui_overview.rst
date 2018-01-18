@@ -95,6 +95,17 @@ The all commands window allows you to quickly see and execute all commands expos
 
 From this window, you can simply click any command you'd like to execute and .Command will do the rest for you.
 
+Log Entry Window
+----------------
+
+The log entry window allows you to quickly see a full callstack for any given item in the `Log History`_. Simply click
+or tap the item in the `Log History`_ to open this window.
+
+.. image:: images/loghistorywindow.svg
+
+From this window, you can copy the full callstack, or press the email button to open your email client and send the
+callstack to any given email address.
+
 To be continued.....
 --------------------
 
