@@ -13,25 +13,25 @@ Description
 Properties
 -----------
 
-+---------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|string                                                                                       |:ref:`ShowConsoleButtonMessage<classwellfired_command_unity_runtime_console_developmentconsole_1aaaddc1e8e0e0b3e39b71166584c833ca>` **{** get; set; **}**   |
-+---------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|DisplayCorner                                                                                |:ref:`DisplayCorner<classwellfired_command_unity_runtime_console_developmentconsole_1a0db29e99e690194f423db909bcdd4cdc>` **{** get; set; **}**              |
-+---------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|:ref:`DevelopmentConsole<classwellfired_command_unity_runtime_console_developmentconsole>`   |:ref:`Instance<classwellfired_command_unity_runtime_console_developmentconsole_1a7283a0939b39103c6cf7a1128b499d7b>` **{** get; set; **}**                   |
-+---------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|bool                                                                                         |:ref:`IsMaximized<classwellfired_command_unity_runtime_console_developmentconsole_1a87af00df9caf8a0cc0b3198daab7af29>` **{** get; set; **}**                |
-+---------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|bool                                                                                         |:ref:`DrawShowConsoleButton<classwellfired_command_unity_runtime_console_developmentconsole_1ae26f524c642f17e3b15ea29e99cde4d7>` **{** get; set; **}**      |
-+---------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|bool                                                                                         |:ref:`ForceMinimize<classwellfired_command_unity_runtime_console_developmentconsole_1ab9b7ad9d49dc112a5ba1a898bf1bcbf6>` **{** get; set; **}**              |
-+---------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|bool                                                                                         |:ref:`JustMadeVisible<classwellfired_command_unity_runtime_console_developmentconsole_1af12c87ddb890eea1c4d87c9fc7185300>` **{** get; set; **}**            |
-+---------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|bool                                                                                         |:ref:`IsVisible<classwellfired_command_unity_runtime_console_developmentconsole_1adb53dae3952bd173c75ce28eee406908>` **{** get; set; **}**                  |
-+---------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|:ref:`ISkinData<interfacewellfired_command_skins_iskindata>`                                 |:ref:`SkinData<classwellfired_command_unity_runtime_console_developmentconsole_1a1f5d9d4378de014bee505c26af2118f0>` **{** get; set; **}**                   |
-+---------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|string                                                                                       |:ref:`ShowDotCommandButtonMessage<classwellfired_command_unity_runtime_console_developmentconsole_1ab820544f8e7c7922d9c8251340a81e98>` **{** get; set; **}**   |
++---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|DisplayCorner                                                                                |:ref:`DisplayCorner<classwellfired_command_unity_runtime_console_developmentconsole_1a0db29e99e690194f423db909bcdd4cdc>` **{** get; set; **}**                 |
++---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|:ref:`DevelopmentConsole<classwellfired_command_unity_runtime_console_developmentconsole>`   |:ref:`Instance<classwellfired_command_unity_runtime_console_developmentconsole_1a7283a0939b39103c6cf7a1128b499d7b>` **{** get; set; **}**                      |
++---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|bool                                                                                         |:ref:`IsMaximized<classwellfired_command_unity_runtime_console_developmentconsole_1a87af00df9caf8a0cc0b3198daab7af29>` **{** get; set; **}**                   |
++---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|bool                                                                                         |:ref:`DrawShowDotCommandButton<classwellfired_command_unity_runtime_console_developmentconsole_1aa7e9a29b0fc5f0eba36865f99b258b74>` **{** get; set; **}**      |
++---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|bool                                                                                         |:ref:`ForceMinimize<classwellfired_command_unity_runtime_console_developmentconsole_1ab9b7ad9d49dc112a5ba1a898bf1bcbf6>` **{** get; set; **}**                 |
++---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|bool                                                                                         |:ref:`JustMadeVisible<classwellfired_command_unity_runtime_console_developmentconsole_1af12c87ddb890eea1c4d87c9fc7185300>` **{** get; set; **}**               |
++---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|bool                                                                                         |:ref:`IsVisible<classwellfired_command_unity_runtime_console_developmentconsole_1adb53dae3952bd173c75ce28eee406908>` **{** get; set; **}**                     |
++---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|:ref:`ISkinData<interfacewellfired_command_skins_iskindata>`                                 |:ref:`SkinData<classwellfired_command_unity_runtime_console_developmentconsole_1a1f5d9d4378de014bee505c26af2118f0>` **{** get; set; **}**                      |
++---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Public Properties
 ------------------
@@ -80,13 +80,13 @@ Public Methods
 Breakdown
 ----------
 
-.. _classwellfired_command_unity_runtime_console_developmentconsole_1aaaddc1e8e0e0b3e39b71166584c833ca:
+.. _classwellfired_command_unity_runtime_console_developmentconsole_1ab820544f8e7c7922d9c8251340a81e98:
 
-- string **ShowConsoleButtonMessage** **{** get; set; **}**
+- string **ShowDotCommandButtonMessage** **{** get; set; **}**
 
     **Description**
 
-        Set this if you would like to change the message displayed on the 'open console' button. 
+        Set this if you would like to change the message displayed on the 'open .:ref:`Command<namespacewellfired_command>`' button. 
 
 .. _classwellfired_command_unity_runtime_console_developmentconsole_1a0db29e99e690194f423db909bcdd4cdc:
 
@@ -94,7 +94,7 @@ Breakdown
 
     **Description**
 
-        Set this if you would like to change corner of the screen the 'open console' button is located. 
+        Set this if you would like to change corner of the screen the 'open .:ref:`Command<namespacewellfired_command>`' button is located. 
 
 .. _classwellfired_command_unity_runtime_console_developmentconsole_1a7283a0939b39103c6cf7a1128b499d7b:
 
@@ -102,7 +102,7 @@ Breakdown
 
     **Description**
 
-        Gets or sets the singleton instance of the .:ref:`Command<namespacewellfired_command>`. 
+        Gets or sets the singleton instance of .:ref:`Command<namespacewellfired_command>`. 
 
 .. _classwellfired_command_unity_runtime_console_developmentconsole_1a87af00df9caf8a0cc0b3198daab7af29:
 
@@ -112,13 +112,13 @@ Breakdown
 
         Is the console maximised 
 
-.. _classwellfired_command_unity_runtime_console_developmentconsole_1ae26f524c642f17e3b15ea29e99cde4d7:
+.. _classwellfired_command_unity_runtime_console_developmentconsole_1aa7e9a29b0fc5f0eba36865f99b258b74:
 
-- bool **DrawShowConsoleButton** **{** get; set; **}**
+- bool **DrawShowDotCommandButton** **{** get; set; **}**
 
     **Description**
 
-        Should we draw the Show :ref:`Console<namespacewellfired_command_unity_runtime_console>` Button or not. 
+        Should we draw the 'open .:ref:`Command<namespacewellfired_command>`' button or not. 
 
 .. _classwellfired_command_unity_runtime_console_developmentconsole_1ab9b7ad9d49dc112a5ba1a898bf1bcbf6:
 
