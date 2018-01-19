@@ -106,8 +106,8 @@ We want to follow the steps introduced in the `Custom Command Examples` section 
 Have a play around with these exposed methods to get a feel for how they work, and what they do, then feel free to go
 and add the ConsoleCommand attribute to your own codebase!
 
-.. note:: Ensure you only call DevelopmentCommands.Register() with a type once or you may end up with duplicate commands
-            in your :ref:`learn_step_by_step_ui_overview_all_commands_window`
+.. note:: Ensure you only call :ref:`Register<classwellfired_command_unity_runtime_commandhandlers_developmentcommands_1a37a393733dfa054630b571a81cfc6e59>`
+            with a type once or you may end up with duplicate commands in your :ref:`learn_step_by_step_ui_overview_all_commands_window`
 
 ConsoleCommands on instance classes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -133,7 +133,7 @@ you would add the following
             EditorScript, it really doesn't matter, as long as you register the object or type (for static classes),
             your ConsoleCommand Attributes will be automatically added to .Command
 
-.. warning:: After registering an instantiated object, be sure to unregister it with DevelopmentCommands.Unregister
+.. warning:: After registering an instantiated object, be sure to unregister it with :ref:`Unregister<classwellfired_command_unity_runtime_commandhandlers_developmentcommands_1a99fd86fb5df93b4c0babbd6d36c34db1>`
             when the object is destroyed. If you don't do this, nothing bad will happen, however it's good practise
             to match your register calls with an unregister call.
 

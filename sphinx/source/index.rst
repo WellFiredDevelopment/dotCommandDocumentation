@@ -35,12 +35,12 @@ The main documentation for the site is organized into the following sections:
     learn/step_by_step/custom_commands
     learn/step_by_step/skins_and_settings
 
-
 .. toctree::
     :maxdepth: 1
     :caption: Advanced
     :name: sec-advanced
 
+    learn/advanced/programmatic_control
     learn/advanced/suggestions
 
 .. toctree::

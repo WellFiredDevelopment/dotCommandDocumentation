@@ -1,7 +1,7 @@
 .. _learn_advanced_suggestions:
 
-Introduction
-============
+Suggestions
+===========
 
 When providing :ref:`learn_step_by_step_custom_command` to .Command, you can also present suggestions to the user on
 what they can input.
@@ -9,8 +9,8 @@ what they can input.
 This could be useful when a function can be called with any data, but you want to provide hints to content creators
 who might not know all the possibilities, it provides a more user friendly interface to .Command.
 
-Improving an existing method
-----------------------------
+Improving an existing Command
+-----------------------------
 
 Suppose our 'real world' example has the following class with the following method.
 
@@ -49,10 +49,12 @@ data, for example
 
     public class EnemyTypeSuggestion : ISuggestion
     {
-        public IEnumerable<string> Suggestion(IEnumerable<string> previousArguments)
-        {
-            return new[] { "enemy_type_sausage", "enemy_type_heroes", "enemy_type_projectiles" };
-        }
+    	public IEnumerable<string> Suggestion(IEnumerable<string> previousArguments)
+    	{
+    		var suggestions = previousArguments.ToList();
+    		suggestions.AddRange( new[] { "enemy_type_sausage", "enemy_type_heroes", "enemy_type_projectiles" } );
+    		return suggestions;
+    	}
     }
 
 The final step is to tell the ConsoleCommand to use our suggestion, you can do this by adding a parameter Attribute, as
