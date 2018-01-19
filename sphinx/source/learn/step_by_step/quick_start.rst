@@ -33,7 +33,7 @@ The recommended approach when loading .Command is as follows.
 For this quick start, we assume you already have an entry point, or a single place in time where you'd like to load and
 instantiate .Command.
 
-1) Decide where you'd like to create and maintain your profile session
+1) Decide upon your entry point for .Command. This will be where you load .Command.
 2) Add the required using
 
     .. code-block:: c#
@@ -62,8 +62,22 @@ instantiate .Command.
         // Dont auto open when an exception is thrown.
         DevelopmentConsole.Instance.DisableAutoOpen();
 
-        // Show the 'Open Console' for quick access if users don't have a tilde key (for instance mobile platforms)
+        // Show the 'open console' for quick access if users don't have a tilde key (for instance mobile platforms)
         DevelopmentConsole.Instance.DrawShowConsoleButton = true;
+
+        // Set a special message on the 'open console' button
+        DevelopmentConsole.Instance.ShowConsoleButtonMessage = "Open Console";
+
+        // Tell the 'open console' button to display in the top left corner
+        DevelopmentConsole.Instance.DisplayCorner = DisplayCorner.TopLef;
+
+        // Get a notification when the visible state of the console changes. I.E. It becomes visible
+        DevelopmentConsole.Instance.VisibleStateChange += (visible) => {
+            if(visible)
+                // Disable In-Game Controls
+            else
+                // Enable In-Game Controls
+        };
 
 Now press play in Unity and you can toggle .Command with the tilde (~) key.
 

@@ -29,9 +29,9 @@ Why .Command is better for you
 Developers
 ^^^^^^^^^^
 
-No more making custom builds to test functionality or track down bugs, with the ability to expose any of your
-c# Methods or Properties (public, private, internal, static or instance) to the :ref:`learn_step_by_step_ui_overview_all_commands_window` window you can access
-them instantly. If you're a power user, the command interface works similar to a regular terminal. All the usual hotkeys
+Instanly expose any of your c# Methods or Properties (public, private, internal, static or instance) to the
+:ref:`learn_step_by_step_ui_overview_all_commands_window` window. Allowing you to access them in game on the command
+line instantly. If you're a power user, the command interface works similar to a regular terminal. All the usual hotkeys
 work here too. All built in types are parsed and displayed as suggestions, with support for complex types.
 
 Quality Assurance

@@ -61,6 +61,9 @@ We want to follow the steps introduced in the `Custom Command Examples` section 
 
     DevelopmentCommands.Register(typeof(HeroCheats));
 
+    .. note:: After registering a type or object, when you want to remove those commands from .Command you can also call
+                DevelopmentCommands.Unregister to unregister that object
+
 2. Mark up your code. (See the highlighted lines for additions)
 
 .. code-block:: c#
@@ -129,6 +132,10 @@ you would add the following
 .. note:: In this case, instantiated object could be anything, from a plain old class, to a MonoBehaviour or
             EditorScript, it really doesn't matter, as long as you register the object or type (for static classes),
             your ConsoleCommand Attributes will be automatically added to .Command
+
+.. warning:: After registering an instantiated object, be sure to unregister it with DevelopmentCommands.Unregister
+            when the object is destroyed. If you don't do this, nothing bad will happen, however it's good practise
+            to match your register calls with an unregister call.
 
 Next Up
 -------
