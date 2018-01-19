@@ -15,6 +15,20 @@ Clear
 
 A simple command that allows you to clear the :ref:`learn_step_by_step_ui_overview_log_history`.
 
+ConsoleScale
+------------
+
+If you'd like to change the scale of .Command, you can call this. Call it if the UI is too small with a larger number or
+if it's too big with a smaller number.
+
+* ConsoleScale 1.5
+
+    This will scale .Command up by 1.5 times, making .Command appear bigger.
+
+* ConsoleScale 0.5
+
+    This will half the scale, making .Command appear smaller
+
 
 DeviceId
 --------
@@ -26,15 +40,21 @@ InspectAllGameObjects
 ---------------------
 
 Run this command to print a list of all game objects in your currently active scene to the
-:ref:`learn_step_by_step_ui_overview_log_history`. After running this command you will see a new entry in the
-:ref:`learn_step_by_step_ui_overview_log_history`, stating 'Click to see a list of all game objects in the scene'. simply
-click this log entry to see all game objects in your current scene.
+:ref:`learn_step_by_step_ui_overview_log_history`. You might use this command if you wanted to know which objects are
+in your scene currently, it would return you a list similar to Unity's built in Hierarchy window.
+
+After running this command you will see a new entry in the :ref:`learn_step_by_step_ui_overview_log_history`, stating
+'Click to see a list of all game objects in the scene'. simply click this log entry to see all game objects in your
+current scene.
 
 InspectGameObject
 -----------------
 
-Run this command to inspect all components on a game object. This command takes parameters, the .Command interface will
-inform you of these required parameters, here is an example usage:
+Run this command to inspect all components on a game object. You might want to do this to check a GameObject has the
+correct components.
+
+This command takes parameters, the .Command interface will inform you of these required parameters, here is an example
+usage:
 
 * InspectGameObject MyGameObject
 
@@ -48,8 +68,12 @@ requested game object.
 InspectGameObjectComponent
 --------------------------
 
-Run this command to inspect a component on a game object. This command takes parameters, the .Command interface will
-inform you of these required parameters, here is an example usage:
+Run this command to inspect a component on a game object. You could do this if you wanted to check a specific value on a
+component. Similar to being able to use the Inspector in Unity Editor but in your built out players. In the example
+below, for example, you could check all of the settings on the Camera component are as expected.
+
+This command takes parameters, the .Command interface will inform you of these required parameters, here is an example
+usage:
 
 * InspectGameObjectComponent MyGameObject Camera
 
@@ -63,8 +87,11 @@ requested component on the requested game object.
 InspectGameObjectProperty
 -------------------------
 
-Run this command to inspect a property on a component on a game object. This command takes parameters, the .Command
-interface will inform you of these required parameters, here is an example usage:
+Run this command to inspect a property on a component on a game object. You could use this if you want to check a
+specific value that is usually exposed to the unity inspector for example, checking the scale on a GameObject.
+
+This command takes parameters, the .Command interface will inform you of these required parameters, here is an example
+usage:
 
 * InspectGameObjectProperty MyGameObject Camera fov
 

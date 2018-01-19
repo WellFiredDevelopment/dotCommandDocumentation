@@ -66,10 +66,10 @@ instantiate .Command.
         DevelopmentConsole.Instance.DrawShowDotCommandButton = true;
 
         // Set a special message on the 'show .Command' button
-        DevelopmentConsole.Instance.ShowDotCommandButtonMessage = "Open .Command";
+        DevelopmentConsole.Instance.ShowDotCommandButtonMessage = "Show .Command (~)";
 
         // Tell the 'open console' button to display in the top left corner
-        DevelopmentConsole.Instance.DisplayCorner = DisplayCorner.TopLef;
+        DevelopmentConsole.Instance.DisplayCorner = DisplayCorner.TopLeft;
 
         // Get a notification when the visible state of the console changes. I.E. It becomes visible
         DevelopmentConsole.Instance.VisibleStateChange += (visible) => {
@@ -84,5 +84,5 @@ Now press play in Unity and you can toggle .Command with the tilde (~) key.
 And Then?
 ---------
 
-In the coming pages, you'll learn more about .Commands User Interface, how to filter the log as well as how to add
+In the coming pages, you'll learn more about .Command's User Interface, how to filter the log as well as how to add
 custom commands.

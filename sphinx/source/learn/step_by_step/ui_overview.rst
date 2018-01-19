@@ -82,7 +82,7 @@ Filters can be toggled on and off, you can also see :ref:`learn_step_by_step_log
 you can add your own custom filters to .Command.
 
 Filters can be toggled on individually and also simultaneously, in the example above, if you toggled on Info and
-Warning, your `Log History`_ would only show messages with the Info or Warning Filter.
+Warning only, your `Log History`_ would only show messages with the Info or Warning Filter.
 
 .. _learn_step_by_step_ui_overview_all_commands_window:
 

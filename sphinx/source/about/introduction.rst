@@ -54,7 +54,7 @@ community. It is edited via text files in the `reStructuredText <http://www.sphi
 language and then compiled into a static website/offline document using the open source
 `Sphinx <http://www.sphinx-doc.org>`_ and `ReadTheDocs <https://readthedocs.org/>`_ tools.
 
-.. note:: You can contribute to .Commands's documentation by opening issues through
+.. note:: You can contribute to .Command's documentation by opening issues through
             `YouTrack <https://wellfired.myjetbrains.com/youtrack/issues/DCOM>`_
             or sending patches via pull requests on its GitHub
             `source repository <https://github.com/WellFiredDevelopment/dotCommandDocumentation>`_.

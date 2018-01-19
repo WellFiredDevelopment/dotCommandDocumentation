@@ -6,7 +6,7 @@ Logs and filters
 Introduction
 ------------
 
-Unity has built in support for three types of filters, and allows you to filer the in editor log with these filters.
+Unity has built in support for four types of filters, and allows you to filer the in editor log with these filters.
 
 * Info
     Messages about your game, this corresponds to the Debug.Log().
@@ -14,8 +14,11 @@ Unity has built in support for three types of filters, and allows you to filer t
 * Warnings
     Warnings about your game, this corresponds to the Debug.LogWarning().
 
-* Errors / Exceptions
+* Errors
     Warnings or exceptions in your game, this corresponds to the Debug.LogError().
+
+* Exceptions
+    These are tracked when exceptions are thrown.
 
 These filters are great and allow you to split up what's visible in your in-editor log, however when a product grows,
 searching through thousands of entries becomes burdensome and frankly a waste of time. On top of this, you cannot see
@@ -36,7 +39,7 @@ Adding custom filters to .Command
 .Command ships with three built in filters, Info, Warning and Error. These can all be toggled on in the
 :ref:`learn_step_by_step_ui_overview_filter_window`.
 
-As an extension to this you add as many Filters as you like, and they will automatically populate the
+As an extension to this you can add as many Filters as you like, and they will automatically populate the
 :ref:`learn_step_by_step_ui_overview_filter_window` window. In order to do this, you must follow the following steps.
 
 .. note::   If you followed the :ref:`learn_step_by_step_quick_start_quickest_start` when you installed .Command, you
@@ -62,7 +65,7 @@ As an extension to this you add as many Filters as you like, and they will autom
 
         DevelopmentConsole.Load(typeof(AdditionalFilters));
 
-3. your new filters; dotCommand, Networking, Sound and Graphics should now be available in the
+3. Your new filters; dotCommand, Networking, Sound and Graphics should now be available in the
 :ref:`learn_step_by_step_ui_overview_filter_window`.
 
 Logging with your custom filter
