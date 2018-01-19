@@ -13,25 +13,31 @@ Description
 Properties
 -----------
 
-+---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
-|:ref:`DevelopmentConsole<classwellfired_command_unity_runtime_console_developmentconsole>`   |:ref:`Instance<classwellfired_command_unity_runtime_console_developmentconsole_1a7283a0939b39103c6cf7a1128b499d7b>` **{** get; set; **}**                |
-+---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
-|bool                                                                                         |:ref:`IsMaximized<classwellfired_command_unity_runtime_console_developmentconsole_1a87af00df9caf8a0cc0b3198daab7af29>` **{** get; set; **}**             |
-+---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
-|bool                                                                                         |:ref:`DrawShowConsoleButton<classwellfired_command_unity_runtime_console_developmentconsole_1ae26f524c642f17e3b15ea29e99cde4d7>` **{** get; set; **}**   |
-+---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
-|bool                                                                                         |:ref:`ForceMinimize<classwellfired_command_unity_runtime_console_developmentconsole_1ab9b7ad9d49dc112a5ba1a898bf1bcbf6>` **{** get; set; **}**           |
-+---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
-|bool                                                                                         |:ref:`JustMadeVisible<classwellfired_command_unity_runtime_console_developmentconsole_1af12c87ddb890eea1c4d87c9fc7185300>` **{** get; set; **}**         |
-+---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
-|bool                                                                                         |:ref:`IsVisible<classwellfired_command_unity_runtime_console_developmentconsole_1adb53dae3952bd173c75ce28eee406908>` **{** get; set; **}**               |
-+---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
-|:ref:`ISkinData<interfacewellfired_command_skins_iskindata>`                                 |:ref:`SkinData<classwellfired_command_unity_runtime_console_developmentconsole_1a1f5d9d4378de014bee505c26af2118f0>` **{** get; set; **}**                |
-+---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|string                                                                                       |:ref:`ShowConsoleButtonMessage<classwellfired_command_unity_runtime_console_developmentconsole_1aaaddc1e8e0e0b3e39b71166584c833ca>` **{** get; set; **}**   |
++---------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|DisplayCorner                                                                                |:ref:`DisplayCorner<classwellfired_command_unity_runtime_console_developmentconsole_1a0db29e99e690194f423db909bcdd4cdc>` **{** get; set; **}**              |
++---------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|:ref:`DevelopmentConsole<classwellfired_command_unity_runtime_console_developmentconsole>`   |:ref:`Instance<classwellfired_command_unity_runtime_console_developmentconsole_1a7283a0939b39103c6cf7a1128b499d7b>` **{** get; set; **}**                   |
++---------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|bool                                                                                         |:ref:`IsMaximized<classwellfired_command_unity_runtime_console_developmentconsole_1a87af00df9caf8a0cc0b3198daab7af29>` **{** get; set; **}**                |
++---------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|bool                                                                                         |:ref:`DrawShowConsoleButton<classwellfired_command_unity_runtime_console_developmentconsole_1ae26f524c642f17e3b15ea29e99cde4d7>` **{** get; set; **}**      |
++---------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|bool                                                                                         |:ref:`ForceMinimize<classwellfired_command_unity_runtime_console_developmentconsole_1ab9b7ad9d49dc112a5ba1a898bf1bcbf6>` **{** get; set; **}**              |
++---------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|bool                                                                                         |:ref:`JustMadeVisible<classwellfired_command_unity_runtime_console_developmentconsole_1af12c87ddb890eea1c4d87c9fc7185300>` **{** get; set; **}**            |
++---------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|bool                                                                                         |:ref:`IsVisible<classwellfired_command_unity_runtime_console_developmentconsole_1adb53dae3952bd173c75ce28eee406908>` **{** get; set; **}**                  |
++---------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|:ref:`ISkinData<interfacewellfired_command_skins_iskindata>`                                 |:ref:`SkinData<classwellfired_command_unity_runtime_console_developmentconsole_1a1f5d9d4378de014bee505c26af2118f0>` **{** get; set; **}**                   |
++---------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Public Properties
 ------------------
 
++------------------------+------------------------------------------------------------------------------------------------------------------------------------+
+|Action< bool >          |:ref:`VisibleStateChange<classwellfired_command_unity_runtime_console_developmentconsole_1a25c54c0b467a4e18d9f58b98806127ee>`       |
 +------------------------+------------------------------------------------------------------------------------------------------------------------------------+
 |bool                    |:ref:`ShouldAcceptGameInput<classwellfired_command_unity_runtime_console_developmentconsole_1a6cc0d2e19853be6c1c4b7cbd7db14fde>`    |
 +------------------------+------------------------------------------------------------------------------------------------------------------------------------+
@@ -58,6 +64,8 @@ Public Methods
 +-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 |void         |:ref:`DisableAutoOpen<classwellfired_command_unity_runtime_console_developmentconsole_1aaa4d6d3d89663175cbee1c727c0a4d2c>` **(**  **)**                                                                              |
 +-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|void         |:ref:`EnableAutoOpen<classwellfired_command_unity_runtime_console_developmentconsole_1a5adf29183c31aabddb6d52dfc3f7c71d>` **(**  **)**                                                                               |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 |void         |:ref:`HideAllOpenPopups<classwellfired_command_unity_runtime_console_developmentconsole_1ab6c36623f90e61264271089ebf616062>` **(**  **)**                                                                            |
 +-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 |void         |:ref:`ClearTypedInput<classwellfired_command_unity_runtime_console_developmentconsole_1a1269e861c7adfd9f4dc45d33a722dce9>` **(**  **)**                                                                              |
@@ -71,6 +79,22 @@ Public Methods
 
 Breakdown
 ----------
+
+.. _classwellfired_command_unity_runtime_console_developmentconsole_1aaaddc1e8e0e0b3e39b71166584c833ca:
+
+- string **ShowConsoleButtonMessage** **{** get; set; **}**
+
+    **Description**
+
+        Set this if you would like to change the message displayed on the 'open console' button. 
+
+.. _classwellfired_command_unity_runtime_console_developmentconsole_1a0db29e99e690194f423db909bcdd4cdc:
+
+- DisplayCorner **DisplayCorner** **{** get; set; **}**
+
+    **Description**
+
+        Set this if you would like to change corner of the screen the 'open console' button is located. 
 
 .. _classwellfired_command_unity_runtime_console_developmentconsole_1a7283a0939b39103c6cf7a1128b499d7b:
 
@@ -116,6 +140,14 @@ Breakdown
 
 - :ref:`ISkinData<interfacewellfired_command_skins_iskindata>` **SkinData** **{** get; set; **}**
 
+.. _classwellfired_command_unity_runtime_console_developmentconsole_1a25c54c0b467a4e18d9f58b98806127ee:
+
+- Action< bool > **VisibleStateChange** 
+
+    **Description**
+
+        This Action will be triggered when the visible state of .:ref:`Command<namespacewellfired_command>` changes. If it's called with true, it means .:ref:`Command<namespacewellfired_command>` became visible, if it's called with false, it means .:ref:`Command<namespacewellfired_command>` was hidden 
+
 .. _classwellfired_command_unity_runtime_console_developmentconsole_1a6cc0d2e19853be6c1c4b7cbd7db14fde:
 
 - bool **ShouldAcceptGameInput** 
@@ -147,6 +179,14 @@ Breakdown
     **Description**
 
         This method will stop .:ref:`Command<namespacewellfired_command>` from auto opening if an error is fired, you can still open it manually. 
+
+.. _classwellfired_command_unity_runtime_console_developmentconsole_1a5adf29183c31aabddb6d52dfc3f7c71d:
+
+- void **EnableAutoOpen** **(**  **)**
+
+    **Description**
+
+        This method will make sure .:ref:`Command<namespacewellfired_command>` auto opens if an error is fired. 
 
 .. _classwellfired_command_unity_runtime_console_developmentconsole_1ab6c36623f90e61264271089ebf616062:
 

@@ -16,11 +16,11 @@ Description
 Public Methods
 ---------------
 
-+-------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|bool         |:ref:`CanSendEmail<classwellfired_command_unity_runtime_email_noemailsender_1a550b6798f934f4faa7e843880fa3e54b>` **(**  **)**                                                                                                                         |
-+-------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|void         |:ref:`Email<classwellfired_command_unity_runtime_email_noemailsender_1abc84669a4c4b11abc91986faa6d48ad4>` **(** string filePathToAttachment, string mimeType, string attachmentFilename, string recipientAddress, string subject, string body **)**   |
-+-------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++-------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|bool         |:ref:`CanSendEmail<classwellfired_command_unity_runtime_email_noemailsender_1a550b6798f934f4faa7e843880fa3e54b>` **(**  **)**                                                                                                                   |
++-------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|void         |:ref:`Email<classwellfired_command_unity_runtime_email_noemailsender_1a62d5d89be88d173ff20834e6e157b573>` **(** string attachmentPath, string mimeType, string attachmentFilename, string recipientAddress, string subject, string body **)**   |
++-------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Breakdown
 ----------
@@ -33,9 +33,9 @@ Breakdown
 
         If this instance of an :ref:`Email<namespacewellfired_command_unity_runtime_email>` Sender can send an email, you should return true from here, if you do this, your Development :ref:`Console<namespacewellfired_command_unity_runtime_console>` will have an :ref:`Email<namespacewellfired_command_unity_runtime_email>` button in certain bits of :ref:`UI<namespacewellfired_command_unity_runtime_ui>`. 
 
-.. _classwellfired_command_unity_runtime_email_noemailsender_1abc84669a4c4b11abc91986faa6d48ad4:
+.. _classwellfired_command_unity_runtime_email_noemailsender_1a62d5d89be88d173ff20834e6e157b573:
 
-- void **Email** **(** string filePathToAttachment, string mimeType, string attachmentFilename, string recipientAddress, string subject, string body **)**
+- void **Email** **(** string attachmentPath, string mimeType, string attachmentFilename, string recipientAddress, string subject, string body **)**
 
     **Description**
 
@@ -43,17 +43,17 @@ Breakdown
 
     **Parameters**
 
-        +-----------------------+---------------------------+
-        |filePathToAttachment   |File path to attachment.   |
-        +-----------------------+---------------------------+
-        |mimeType               |MIME type.                 |
-        +-----------------------+---------------------------+
-        |attachmentFilename     |Attachment filename.       |
-        +-----------------------+---------------------------+
-        |recipientAddress       |Recipient address.         |
-        +-----------------------+---------------------------+
-        |subject                |Subject.                   |
-        +-----------------------+---------------------------+
-        |body                   |Body.                      |
-        +-----------------------+---------------------------+
+        +---------------------+---------------------------+
+        |attachmentPath       |File path to attachment.   |
+        +---------------------+---------------------------+
+        |mimeType             |MIME type.                 |
+        +---------------------+---------------------------+
+        |attachmentFilename   |Attachment filename.       |
+        +---------------------+---------------------------+
+        |recipientAddress     |Recipient address.         |
+        +---------------------+---------------------------+
+        |subject              |Subject.                   |
+        +---------------------+---------------------------+
+        |body                 |Body.                      |
+        +---------------------+---------------------------+
         

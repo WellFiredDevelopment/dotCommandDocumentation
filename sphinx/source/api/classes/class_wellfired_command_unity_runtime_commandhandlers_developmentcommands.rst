@@ -90,13 +90,13 @@ Breakdown
 
     **Description**
 
-        Call this method to register :ref:`Command<namespacewellfired_command>` Wrappers of a certain type. :ref:`Command<namespacewellfired_command>` handlers are methods in a class that have a [CommandHandler] attribute on them. 
+        Call this method to register an object by type. Objects that are registered will be parsed for the ConsoleCommand attribute. 
 
     **Parameters**
 
-        +-------------+-------------+
-        |type         |Type.        |
-        +-------------+-------------+
+        +-------------+------------------------------------------------------------------------------------------------------+
+        |type         |The type of object that you would like to register with .:ref:`Command<namespacewellfired_command>`   |
+        +-------------+------------------------------------------------------------------------------------------------------+
         
 .. _classwellfired_command_unity_runtime_commandhandlers_developmentcommands_1a65becb34d32a91e763ddc50c6db630bb:
 
@@ -104,13 +104,13 @@ Breakdown
 
     **Description**
 
-        Call this to register the command handles in the object you specify. :ref:`Command<namespacewellfired_command>` handlers are methods in a class that have a [CommandHandler] attribute on them. 
+        Call this method to register an object by instance. Objects that are registered will be parsed for the ConsoleCommand attribute. 
 
     **Parameters**
 
-        +-------------+
-        |obj          |
-        +-------------+
+        +-------------+----------------------------------------------------------------------------------------------+
+        |obj          |The object that you would like to register with .:ref:`Command<namespacewellfired_command>`   |
+        +-------------+----------------------------------------------------------------------------------------------+
         
 .. _classwellfired_command_unity_runtime_commandhandlers_developmentcommands_1a99fd86fb5df93b4c0babbd6d36c34db1:
 
@@ -118,13 +118,13 @@ Breakdown
 
     **Description**
 
-        Call this to unregister the command handlers on the object. This should be called when the object is destroyed. 
+        If you have called Register on an object, you should match that call with an unregister 
 
     **Parameters**
 
-        +-------------+
-        |obj          |
-        +-------------+
+        +-------------+------------------------------------------------------------------------------------------------+
+        |obj          |The object that you would like to unregister from .:ref:`Command<namespacewellfired_command>`   |
+        +-------------+------------------------------------------------------------------------------------------------+
         
 .. _classwellfired_command_unity_runtime_commandhandlers_developmentcommands_1a36a6864d22a89bc4dace021a77701ab3:
 
@@ -132,11 +132,11 @@ Breakdown
 
     **Description**
 
-        Call this to unregister static commands on the type specified. 
+        If you have called Register on a type, you should match that call with an unregister 
 
     **Parameters**
 
-        +-------------+
-        |type         |
-        +-------------+
+        +-------------+--------------------------------------------------------------------------------------------------------+
+        |type         |The type of object that you would like to unregister from .:ref:`Command<namespacewellfired_command>`   |
+        +-------------+--------------------------------------------------------------------------------------------------------+
         

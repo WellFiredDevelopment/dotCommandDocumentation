@@ -16,7 +16,9 @@ Public Methods
 +-------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 |             |:ref:`EmailViewModal<classwellfired_command_unity_runtime_modals_emailviewmodal_1a0eb1ef98c4812df3949ba9590d21ce11>` **(** :ref:`LogHistory<classwellfired_command_unity_runtime_modals_loghistory>` viewModel **)**   |
 +-------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|void         |:ref:`WriteToFile<classwellfired_command_unity_runtime_modals_emailviewmodal_1a51847744ded7e8c9b5507b89aff0fe8c>` **(** string filename **)**                                                                          |
+|string       |:ref:`GetAsBody<classwellfired_command_unity_runtime_modals_emailviewmodal_1a6fea0cb69f3f97538ed13774749239fc>` **(**  **)**                                                                                           |
++-------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|string       |:ref:`GetHtml<classwellfired_command_unity_runtime_modals_emailviewmodal_1ab568a861fc1f0ed6c31cdcb0eefe5369>` **(**  **)**                                                                                             |
 +-------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Breakdown
@@ -26,7 +28,11 @@ Breakdown
 
 -  **EmailViewModal** **(** :ref:`LogHistory<classwellfired_command_unity_runtime_modals_loghistory>` viewModel **)**
 
-.. _classwellfired_command_unity_runtime_modals_emailviewmodal_1a51847744ded7e8c9b5507b89aff0fe8c:
+.. _classwellfired_command_unity_runtime_modals_emailviewmodal_1a6fea0cb69f3f97538ed13774749239fc:
 
-- void **WriteToFile** **(** string filename **)**
+- string **GetAsBody** **(**  **)**
+
+.. _classwellfired_command_unity_runtime_modals_emailviewmodal_1ab568a861fc1f0ed6c31cdcb0eefe5369:
+
+- string **GetHtml** **(**  **)**
 
