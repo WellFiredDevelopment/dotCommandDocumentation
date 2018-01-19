@@ -62,11 +62,11 @@ instantiate .Command.
         // Dont auto open when an exception is thrown.
         DevelopmentConsole.Instance.DisableAutoOpen();
 
-        // Show the 'open console' for quick access if users don't have a tilde key (for instance mobile platforms)
-        DevelopmentConsole.Instance.DrawShowConsoleButton = true;
+        // Show the 'show .Command' for quick access if users don't have a tilde key (for instance mobile platforms)
+        DevelopmentConsole.Instance.DrawShowDotCommandButton = true;
 
-        // Set a special message on the 'open console' button
-        DevelopmentConsole.Instance.ShowConsoleButtonMessage = "Open Console";
+        // Set a special message on the 'show .Command' button
+        DevelopmentConsole.Instance.ShowDotCommandButtonMessage = "Open .Command";
 
         // Tell the 'open console' button to display in the top left corner
         DevelopmentConsole.Instance.DisplayCorner = DisplayCorner.TopLef;
