@@ -59,7 +59,7 @@ Public Methods
 +-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 |void         |:ref:`DisableAutoOpen<classwellfired_command_unity_runtime_console_developmentconsole_1aaa4d6d3d89663175cbee1c727c0a4d2c>` **(**  **)**                                                                              |
 +-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|void         |:ref:`EnableAutoOpen<classwellfired_command_unity_runtime_console_developmentconsole_1a5adf29183c31aabddb6d52dfc3f7c71d>` **(**  **)**                                                                               |
+|void         |:ref:`EnableAutoOpen<classwellfired_command_unity_runtime_console_developmentconsole_1a9f6e7699776930577e100d177f476ddf>` **(** bool openOnException = true, bool openOnError = false **)**                          |
 +-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 |void         |:ref:`HideAllOpenPopups<classwellfired_command_unity_runtime_console_developmentconsole_1ab6c36623f90e61264271089ebf616062>` **(**  **)**                                                                            |
 +-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -188,14 +188,22 @@ Breakdown
 
         This method will stop .:ref:`Command<namespacewellfired_command>` from auto opening if an error is fired, you can still open it manually. 
 
-.. _classwellfired_command_unity_runtime_console_developmentconsole_1a5adf29183c31aabddb6d52dfc3f7c71d:
+.. _classwellfired_command_unity_runtime_console_developmentconsole_1a9f6e7699776930577e100d177f476ddf:
 
-- void **EnableAutoOpen** **(**  **)**
+- void **EnableAutoOpen** **(** bool openOnException = true, bool openOnError = false **)**
 
     **Description**
 
         This method will make sure .:ref:`Command<namespacewellfired_command>` auto opens if an error is fired. 
 
+    **Parameters**
+
+        +------------------+----------------------------------------------------------------------------+
+        |openOnException   |Should .:ref:`Command<namespacewellfired_command>` auto open on exception   |
+        +------------------+----------------------------------------------------------------------------+
+        |openOnError       |Should .:ref:`Command<namespacewellfired_command>` auto open on error       |
+        +------------------+----------------------------------------------------------------------------+
+        
 .. _classwellfired_command_unity_runtime_console_developmentconsole_1ab6c36623f90e61264271089ebf616062:
 
 - void **HideAllOpenPopups** **(**  **)**
