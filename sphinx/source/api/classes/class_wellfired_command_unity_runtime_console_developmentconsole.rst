@@ -51,16 +51,11 @@ public-static-attrib
 |float        |:ref:`ScreenWidth<classwellfired_command_unity_runtime_console_developmentconsole_1aff1fb5038610ec6b9a675e5f767e6b52>`    |
 +-------------+--------------------------------------------------------------------------------------------------------------------------+
 
-Public Static Methods
-----------------------
-
-+-------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
-|void         |:ref:`Load<classwellfired_command_unity_runtime_console_developmentconsole_1a133cb0a7e9e6345c6df3e3b3d908bc0e>` **(** Type customFilterType = null **)**   |
-+-------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
-
 Public Methods
 ---------------
 
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|void         |:ref:`AddCustomFilters<classwellfired_command_unity_runtime_console_developmentconsole_1ac7cf6b64d8c14e89d7b680a8c757881b>` **(** Type customFilterProvider **)**                                                    |
 +-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 |void         |:ref:`DisableAutoOpen<classwellfired_command_unity_runtime_console_developmentconsole_1aaa4d6d3d89663175cbee1c727c0a4d2c>` **(**  **)**                                                                              |
 +-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -76,6 +71,13 @@ Public Methods
 +-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 |void         |:ref:`InspectLogEntry<classwellfired_command_unity_runtime_console_developmentconsole_1a726c5f5684c6e427fb51b88cd2a10fb7>` **(** :ref:`LogEntry<classwellfired_command_unity_runtime_log_logentry>` logEntry **)**   |
 +-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Public Static Methods
+----------------------
+
++-------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+|void         |:ref:`Load<classwellfired_command_unity_runtime_console_developmentconsole_1a133cb0a7e9e6345c6df3e3b3d908bc0e>` **(** Type customFilterType = null **)**   |
++-------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Breakdown
 ----------
@@ -164,14 +166,20 @@ Breakdown
 
 - float **ScreenWidth** 
 
-.. _classwellfired_command_unity_runtime_console_developmentconsole_1a133cb0a7e9e6345c6df3e3b3d908bc0e:
+.. _classwellfired_command_unity_runtime_console_developmentconsole_1ac7cf6b64d8c14e89d7b680a8c757881b:
 
-- void **Load** **(** Type customFilterType = null **)**
+- void **AddCustomFilters** **(** Type customFilterProvider **)**
 
     **Description**
 
-        Call this method to load a single instance of .:ref:`Command<namespacewellfired_command>`. You can then access the instance through the Instance property. 
+        This method allows you to add more filters to the consol at runtime, .:ref:`Command<namespacewellfired_command>` calls this internally when you pass filters to load, but you can additionally call this if you need to append more. (I.E.) you load modules at runtime and can't be sure of which enums will be needed at load time. 
 
+    **Parameters**
+
+        +-----------------------+---------------------------------------------------------------------------------------+
+        |customFilterProvider   |This type should be an enum, which holds the types you'd like to use when filtering.   |
+        +-----------------------+---------------------------------------------------------------------------------------+
+        
 .. _classwellfired_command_unity_runtime_console_developmentconsole_1aaa4d6d3d89663175cbee1c727c0a4d2c:
 
 - void **DisableAutoOpen** **(**  **)**
@@ -242,3 +250,11 @@ Breakdown
         |logEntry     |:ref:`Log<namespacewellfired_command_unity_runtime_log>` Entry.   |
         +-------------+------------------------------------------------------------------+
         
+.. _classwellfired_command_unity_runtime_console_developmentconsole_1a133cb0a7e9e6345c6df3e3b3d908bc0e:
+
+- void **Load** **(** Type customFilterType = null **)**
+
+    **Description**
+
+        Call this method to load a single instance of .:ref:`Command<namespacewellfired_command>`. You can then access the instance through the Instance property. 
+

@@ -29,9 +29,11 @@ Public Properties
 Public Methods
 ---------------
 
-+-------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|             |:ref:`Filter<classwellfired_command_unity_runtime_ui_windows_filter_1a96b07424c7a40210ae3b92091a6703ad>` **(** IEnumerable< :ref:`FilterState<classwellfired_command_unity_runtime_ui_windows_filter_filterstate>` > customFilters **)**   |
-+-------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++-------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|             |:ref:`Filter<classwellfired_command_unity_runtime_ui_windows_filter_1a9cffd866d948da5ec49744a6242f90ff>` **(**  **)**                                                                                                                               |
++-------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|void         |:ref:`AddCustomFilters<classwellfired_command_unity_runtime_ui_windows_filter_1a2411887917056c4207cd3e6e2ef8ad5b>` **(** IEnumerable< :ref:`FilterState<classwellfired_command_unity_runtime_ui_windows_filter_filterstate>` > filterStates **)**   |
++-------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Breakdown
 ----------
@@ -48,7 +50,11 @@ Breakdown
 
 - int **ActiveFilterCount** 
 
-.. _classwellfired_command_unity_runtime_ui_windows_filter_1a96b07424c7a40210ae3b92091a6703ad:
+.. _classwellfired_command_unity_runtime_ui_windows_filter_1a9cffd866d948da5ec49744a6242f90ff:
 
--  **Filter** **(** IEnumerable< :ref:`FilterState<classwellfired_command_unity_runtime_ui_windows_filter_filterstate>` > customFilters **)**
+-  **Filter** **(**  **)**
+
+.. _classwellfired_command_unity_runtime_ui_windows_filter_1a2411887917056c4207cd3e6e2ef8ad5b:
+
+- void **AddCustomFilters** **(** IEnumerable< :ref:`FilterState<classwellfired_command_unity_runtime_ui_windows_filter_filterstate>` > filterStates **)**
 
