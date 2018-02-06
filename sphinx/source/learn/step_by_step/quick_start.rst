@@ -15,7 +15,7 @@ who are unfamiliar with writing code (or simply don't want to), you can get star
 
 Quickest Start
 --------------
-Simply drag the prefab DebugConsoleLoader from the /WellFired/WellFired.Command.Prefabs directory into your scene and
+Simply drag the prefab DebugConsoleLoader from the /WellFired/WellFired.Command/Platform/Prefabs directory into your scene and
 press play. You can now toggle .Command with the tilde (~) key, or by pressing the button at the top left of the screen.
 Once open .Command should look something like this.
 

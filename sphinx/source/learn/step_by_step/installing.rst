@@ -6,10 +6,10 @@ Package Contents
 Each .unitypackage downloaded from the AssetStore or from the `WellFired <https://www.wellfired.com>`_ website will have
 the same contents.
 
-* \/WellFired/WellFired.Command
-    Here you're going to find all things related to the .Command project.
-* \/WellFired/WellFired.Command.Prefabs
-    Here you can find easy to use quick start prefabs.
+* \/WellFired/WellFired.Command/Code
+    Here you'll find all code related to the .Command project
+* \/WellFired/WellFired.Command/Platform/
+    Here you can find some useful utilities, such as quick start prefabs, link.xml and test scenes.
 
 Installing
 ----------

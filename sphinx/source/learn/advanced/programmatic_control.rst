@@ -52,6 +52,21 @@ property.
                 // Enable In-Game Controls
         };
 
+Adding additional Custom Filters
+--------------------------------
+
+At any point during execution you can add additional filters to .Command, this can be useful if you support dynamic module loading, or if your team wants to distribute
+.Command as part of a central package and doesn't know ahead of time what Filters they will have
+
+    .. code-block:: c#
+
+        private enum DynamicModuleFilter
+		{
+			ModuleFIlter
+		}
+
+        DevelopmentConsole.Instance.AddCustomFilters(typeof(DynamicModuleFilter));
+
 Next
 ----
 
