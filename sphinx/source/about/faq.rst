@@ -7,7 +7,7 @@ Can you add some more commands to .Command
 ------------------------------------------
 
 We tried to provide a nice set of out of the box functionality, but we're definitely open to adding more! If there's
-some missing commands you would to see in .Command, feel free to create an issue on our
+some missing commands you would like to see in .Command, feel free to create an issue on our
 `YouTrack <https://wellfired.myjetbrains.com/youtrack/issues/DCOM>`_ page, or join and contact us through our keybase
 team wellfiredltd.technicalsupport.
 
