@@ -26,6 +26,8 @@ Properties
 +---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
 |bool                                                                                         |:ref:`ForceMinimize<classwellfired_command_unity_runtime_console_developmentconsole_1ab9b7ad9d49dc112a5ba1a898bf1bcbf6>` **{** get; set; **}**                 |
 +---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|int                                                                                          |:ref:`InputBlockerSortingOrder<classwellfired_command_unity_runtime_console_developmentconsole_1a2bc54d23d17e2524abc31d5b655919a8>` **{** get; set; **}**      |
++---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
 |bool                                                                                         |:ref:`JustMadeVisible<classwellfired_command_unity_runtime_console_developmentconsole_1af12c87ddb890eea1c4d87c9fc7185300>` **{** get; set; **}**               |
 +---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
 |bool                                                                                         |:ref:`IsVisible<classwellfired_command_unity_runtime_console_developmentconsole_1adb53dae3952bd173c75ce28eee406908>` **{** get; set; **}**                     |
@@ -129,6 +131,14 @@ Breakdown
     **Description**
 
         Has the user clicked on the Force Hide button. If so, they can re-open the console with the ~ key or by setting this value to false. 
+
+.. _classwellfired_command_unity_runtime_console_developmentconsole_1a2bc54d23d17e2524abc31d5b655919a8:
+
+- int **InputBlockerSortingOrder** **{** get; set; **}**
+
+    **Description**
+
+        Since .:ref:`Command<namespacewellfired_command>` is based on :ref:`Unity<namespacewellfired_command_unity>` legacy GUI, we use the new :ref:`UI<namespacewellfired_command_unity_runtime_ui>` system to block input behind the console. This property allows to set the sorting order of the canvas used to block input. It is by default in front of everyting. 
 
 .. _classwellfired_command_unity_runtime_console_developmentconsole_1af12c87ddb890eea1c4d87c9fc7185300:
 
