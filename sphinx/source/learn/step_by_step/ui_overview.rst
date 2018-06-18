@@ -50,6 +50,9 @@ of message you are receiving, this works similar to Unity's Console Window.
 
 Each item in this list can be clicked (or touched) to bring up a separate window showing a full callstack.
 
+.. tip:: Note that the list can be scrolled up and down by directly sliding on it. This allows you to scroll the list without grabbing the scrollbar
+         which comes as a great convenience on small screen devices.
+
 Input Field
 ^^^^^^^^^^^
 

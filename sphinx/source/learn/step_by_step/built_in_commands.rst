@@ -10,6 +10,12 @@ added. It's also incredibly easy to add your own commands, as you'll see in the 
 At any point during execution of your game, you can view the :ref:`learn_step_by_step_ui_overview_all_commands_window`
 for a full list of all commands. Commands may also contain small description to help you understand their purpose.
 
+AutoScroll
+----------
+
+A command that allows you to jump to last log entry and to activate autoscrolling. Autoscrolling will get disabled as soon as
+you scroll the list of log entries.
+
 Clear
 -----
 
