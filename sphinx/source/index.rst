@@ -1,10 +1,10 @@
 .Command Documentation
 ======================
 
-Welcome to the official documentation for .Command a simple Command Line Processor for Unity Applications.
+Welcome to the official documentation for .Command a powerful Command Line Processor for Unity Applications.
 
 If you are reading the .pdf version of this documentation, you may find the online version easier to navigate. 
-It is accessible on `https://dotcommand-documentation.readthedocs.io/en/2018.1.x/ <https://dotcommand-documentation.readthedocs.io/en/2018.1.x/>`_.
+It is accessible on `https://dotcommand-documentation.readthedocs.io/en/latest/ <https://dotcommand-documentation.readthedocs.io/en/latest/>`_.
 
 We recommend you read the :ref:`introduction page <doc_about_intro>` to get an overview of what this documentation
 has to offer.
