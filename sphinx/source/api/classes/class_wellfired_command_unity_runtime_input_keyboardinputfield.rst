@@ -16,9 +16,11 @@ Description
 Public Properties
 ------------------
 
-+-------------+---------------------------------------------------------------------------------------------------------------------+
-|bool         |:ref:`HasFocus<classwellfired_command_unity_runtime_input_keyboardinputfield_1a37bf7eec27d5f9c40facdafc0dd0c8b4>`    |
-+-------------+---------------------------------------------------------------------------------------------------------------------+
++---------------+-----------------------------------------------------------------------------------------------------------------------+
+|const string   |:ref:`FocusOutId<classwellfired_command_unity_runtime_input_keyboardinputfield_1a5e14355b9bb28e2973a72b27b42efe5b>`    |
++---------------+-----------------------------------------------------------------------------------------------------------------------+
+|bool           |:ref:`HasFocus<classwellfired_command_unity_runtime_input_keyboardinputfield_1a37bf7eec27d5f9c40facdafc0dd0c8b4>`      |
++---------------+-----------------------------------------------------------------------------------------------------------------------+
 
 Properties
 -----------
@@ -52,6 +54,10 @@ Public Methods
 
 Breakdown
 ----------
+
+.. _classwellfired_command_unity_runtime_input_keyboardinputfield_1a5e14355b9bb28e2973a72b27b42efe5b:
+
+- const string **FocusOutId** 
 
 .. _classwellfired_command_unity_runtime_input_keyboardinputfield_1a37bf7eec27d5f9c40facdafc0dd0c8b4:
 

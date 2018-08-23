@@ -23,7 +23,9 @@ Public Static Methods
 +--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 |IDisposable   |:ref:`BodyBeginVertical<classwellfired_command_unity_runtime_unitygui_helper_1a50ac2353558a2f183de59b95210308c2>` **(** :ref:`ISkinData<interfacewellfired_command_skins_iskindata>` skinData **)**                                                                                                                 |
 +--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|GUIStyle      |:ref:`Window<classwellfired_command_unity_runtime_unitygui_helper_1a1be07c0f4a512b888b860bd43854caab>` **(** :ref:`ISkinData<interfacewellfired_command_skins_iskindata>` skinData **)**                                                                                                                            |
+|bool          |:ref:`IsValidConsoleScale<classwellfired_command_unity_runtime_unitygui_helper_1a782179b47c56679df112669f42e268ec>` **(** float scale **)**                                                                                                                                                                         |
++--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|void          |:ref:`Label<classwellfired_command_unity_runtime_unitygui_helper_1a2fc94956b0c7e627a9ac39cb5633e184>` **(** :ref:`ISkinData<interfacewellfired_command_skins_iskindata>` skinData, GUIContent content, params GUILayoutOption[] options **)**                                                                       |
 +--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 |void          |:ref:`Label<classwellfired_command_unity_runtime_unitygui_helper_1a318e14f30e7978b46d11559efc407683>` **(** :ref:`ISkinData<interfacewellfired_command_skins_iskindata>` skinData, GUIContent content **)**                                                                                                         |
 +--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -43,13 +45,15 @@ Public Static Methods
 +--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 |IDisposable   |:ref:`BodyBeginHorizontal<classwellfired_command_unity_runtime_unitygui_helper_1a2e8c72e490e5c40577b54679a1f5ff24>` **(** :ref:`ISkinData<interfacewellfired_command_skins_iskindata>` skinData **)**                                                                                                               |
 +--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|void          |:ref:`Label<classwellfired_command_unity_runtime_unitygui_helper_1a2fc94956b0c7e627a9ac39cb5633e184>` **(** :ref:`ISkinData<interfacewellfired_command_skins_iskindata>` skinData, GUIContent content, params GUILayoutOption[] options **)**                                                                       |
+|GUIStyle      |:ref:`Window<classwellfired_command_unity_runtime_unitygui_helper_1a1be07c0f4a512b888b860bd43854caab>` **(** :ref:`ISkinData<interfacewellfired_command_skins_iskindata>` skinData **)**                                                                                                                            |
 +--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 |void          |:ref:`Space<classwellfired_command_unity_runtime_unitygui_helper_1a8f449ff8ac593ec91d53526c360d252e>` **(** :ref:`ISkinData<interfacewellfired_command_skins_iskindata>` skinData **)**                                                                                                                             |
 +--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|void          |:ref:`ShrinkableSpace<classwellfired_command_unity_runtime_unitygui_helper_1aa70d7032b6b196b2eff9e6f34d431739>` **(** :ref:`ISkinData<interfacewellfired_command_skins_iskindata>` skinData **)**                                                                                                                   |
++--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 |void          |:ref:`LogEntry<classwellfired_command_unity_runtime_unitygui_helper_1aa303a7c1fb872f2e549a9255c052950b>` **(** :ref:`ISkinData<interfacewellfired_command_skins_iskindata>` skinData, Rect itemRect, string message, LogType type, bool hover, bool active, bool on, bool keyboardFocus **)**                       |
 +--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|string        |:ref:`TextEntry<classwellfired_command_unity_runtime_unitygui_helper_1a13330785ca5c54f1ebc7e6eb958b24f0>` **(** :ref:`ISkinData<interfacewellfired_command_skins_iskindata>` skinData, string commandInput **)**                                                                                                    |
+|string        |:ref:`TextEntry<classwellfired_command_unity_runtime_unitygui_helper_1a204a07eb316953f5224d5dc420701b89>` **(** :ref:`ISkinData<interfacewellfired_command_skins_iskindata>` skinData, string commandInput, params GUILayoutOption[] options **)**                                                                  |
 +--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 |Vector2       |:ref:`DrawTooltip<classwellfired_command_unity_runtime_unitygui_helper_1a2d2af8e447496f885387ad1d897138ed>` **(** :ref:`ISkinData<interfacewellfired_command_skins_iskindata>` skinData, Vector2 topLeft, :ref:`CommandWrapper<classwellfired_command_unity_runtime_wrapper_commandwrapper>` commandWrapper **)**   |
 +--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -75,13 +79,17 @@ Breakdown
 
 - float **Scale** **{** get; set; **}**
 
-.. _classwellfired_command_unity_runtime_unitygui_helper_1a2fc94956b0c7e627a9ac39cb5633e184:
+.. _classwellfired_command_unity_runtime_unitygui_helper_1a1be07c0f4a512b888b860bd43854caab:
 
-- void **Label** **(** :ref:`ISkinData<interfacewellfired_command_skins_iskindata>` skinData, GUIContent content, params GUILayoutOption[] options **)**
+- GUIStyle **Window** **(** :ref:`ISkinData<interfacewellfired_command_skins_iskindata>` skinData **)**
 
 .. _classwellfired_command_unity_runtime_unitygui_helper_1a50ac2353558a2f183de59b95210308c2:
 
 - IDisposable **BodyBeginVertical** **(** :ref:`ISkinData<interfacewellfired_command_skins_iskindata>` skinData **)**
+
+.. _classwellfired_command_unity_runtime_unitygui_helper_1a2fc94956b0c7e627a9ac39cb5633e184:
+
+- void **Label** **(** :ref:`ISkinData<interfacewellfired_command_skins_iskindata>` skinData, GUIContent content, params GUILayoutOption[] options **)**
 
 .. _classwellfired_command_unity_runtime_unitygui_helper_1a318e14f30e7978b46d11559efc407683:
 
@@ -119,21 +127,25 @@ Breakdown
 
 - IDisposable **BodyBeginHorizontal** **(** :ref:`ISkinData<interfacewellfired_command_skins_iskindata>` skinData **)**
 
-.. _classwellfired_command_unity_runtime_unitygui_helper_1a1be07c0f4a512b888b860bd43854caab:
+.. _classwellfired_command_unity_runtime_unitygui_helper_1a782179b47c56679df112669f42e268ec:
 
-- GUIStyle **Window** **(** :ref:`ISkinData<interfacewellfired_command_skins_iskindata>` skinData **)**
+- bool **IsValidConsoleScale** **(** float scale **)**
 
 .. _classwellfired_command_unity_runtime_unitygui_helper_1a8f449ff8ac593ec91d53526c360d252e:
 
 - void **Space** **(** :ref:`ISkinData<interfacewellfired_command_skins_iskindata>` skinData **)**
 
+.. _classwellfired_command_unity_runtime_unitygui_helper_1aa70d7032b6b196b2eff9e6f34d431739:
+
+- void **ShrinkableSpace** **(** :ref:`ISkinData<interfacewellfired_command_skins_iskindata>` skinData **)**
+
 .. _classwellfired_command_unity_runtime_unitygui_helper_1aa303a7c1fb872f2e549a9255c052950b:
 
 - void **LogEntry** **(** :ref:`ISkinData<interfacewellfired_command_skins_iskindata>` skinData, Rect itemRect, string message, LogType type, bool hover, bool active, bool on, bool keyboardFocus **)**
 
-.. _classwellfired_command_unity_runtime_unitygui_helper_1a13330785ca5c54f1ebc7e6eb958b24f0:
+.. _classwellfired_command_unity_runtime_unitygui_helper_1a204a07eb316953f5224d5dc420701b89:
 
-- string **TextEntry** **(** :ref:`ISkinData<interfacewellfired_command_skins_iskindata>` skinData, string commandInput **)**
+- string **TextEntry** **(** :ref:`ISkinData<interfacewellfired_command_skins_iskindata>` skinData, string commandInput, params GUILayoutOption[] options **)**
 
 .. _classwellfired_command_unity_runtime_unitygui_helper_1a2d2af8e447496f885387ad1d897138ed:
 
