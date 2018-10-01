@@ -14,7 +14,7 @@ From here, select the .Command menu in the left hand pane.
 Settings
 --------
 
-There are currently only two global .Command settings.
+There is currently only one global .Command settings.
 
 1. Theme
     .Command ships with a selection of themes that are ready to use out of the box, you can select the theme here. By
