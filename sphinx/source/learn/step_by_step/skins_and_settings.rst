@@ -16,11 +16,7 @@ Settings
 
 There are currently only two global .Command settings.
 
-1. Allow sending of usage data
-    .Command will by default send anonymous analytics data to WellFired Development to help improve .Command
-    functionality, if you don't want this feature, be sure to disable this option.
-
-2. Theme
+1. Theme
     .Command ships with a selection of themes that are ready to use out of the box, you can select the theme here. By
     default, .Command uses the dark theme.
 
