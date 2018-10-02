@@ -14,9 +14,9 @@ Properties
 -----------
 
 +---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|string                                                                                       |:ref:`ShowDotCommandButtonMessage<classwellfired_command_unity_runtime_console_developmentconsole_1ab820544f8e7c7922d9c8251340a81e98>` **{** get; set; **}**   |
+|int                                                                                          |:ref:`InputBlockerSortingOrder<classwellfired_command_unity_runtime_console_developmentconsole_1a2bc54d23d17e2524abc31d5b655919a8>` **{** get; set; **}**      |
 +---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|DisplayCorner                                                                                |:ref:`DisplayCorner<classwellfired_command_unity_runtime_console_developmentconsole_1a0db29e99e690194f423db909bcdd4cdc>` **{** get; set; **}**                 |
+|string                                                                                       |:ref:`ShowDotCommandButtonMessage<classwellfired_command_unity_runtime_console_developmentconsole_1ab820544f8e7c7922d9c8251340a81e98>` **{** get; set; **}**   |
 +---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
 |:ref:`DevelopmentConsole<classwellfired_command_unity_runtime_console_developmentconsole>`   |:ref:`Instance<classwellfired_command_unity_runtime_console_developmentconsole_1a7283a0939b39103c6cf7a1128b499d7b>` **{** get; set; **}**                      |
 +---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -26,13 +26,17 @@ Properties
 +---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
 |bool                                                                                         |:ref:`ForceMinimize<classwellfired_command_unity_runtime_console_developmentconsole_1ab9b7ad9d49dc112a5ba1a898bf1bcbf6>` **{** get; set; **}**                 |
 +---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|int                                                                                          |:ref:`InputBlockerSortingOrder<classwellfired_command_unity_runtime_console_developmentconsole_1a2bc54d23d17e2524abc31d5b655919a8>` **{** get; set; **}**      |
+|DisplayCorner                                                                                |:ref:`DisplayCorner<classwellfired_command_unity_runtime_console_developmentconsole_1a0db29e99e690194f423db909bcdd4cdc>` **{** get; set; **}**                 |
 +---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
 |bool                                                                                         |:ref:`JustMadeVisible<classwellfired_command_unity_runtime_console_developmentconsole_1af12c87ddb890eea1c4d87c9fc7185300>` **{** get; set; **}**               |
++---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|bool                                                                                         |:ref:`EmailLogSupportEnabled<classwellfired_command_unity_runtime_console_developmentconsole_1aeac4e5acedaa1409205b2fbbe7f9fce6>` **{** get; set; **}**        |
 +---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
 |bool                                                                                         |:ref:`IsVisible<classwellfired_command_unity_runtime_console_developmentconsole_1adb53dae3952bd173c75ce28eee406908>` **{** get; set; **}**                     |
 +---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
 |:ref:`ISkinData<interfacewellfired_command_skins_iskindata>`                                 |:ref:`SkinData<classwellfired_command_unity_runtime_console_developmentconsole_1a1f5d9d4378de014bee505c26af2118f0>` **{** get; set; **}**                      |
++---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|bool                                                                                         |:ref:`AutoScroll<classwellfired_command_unity_runtime_console_developmentconsole_1a9b32de2191e7d6256593d03a33481d10>` **{** get; set; **}**                    |
 +---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Public Properties
@@ -73,24 +77,18 @@ Public Methods
 +-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 |void         |:ref:`InspectLogEntry<classwellfired_command_unity_runtime_console_developmentconsole_1a726c5f5684c6e427fb51b88cd2a10fb7>` **(** :ref:`LogEntry<classwellfired_command_unity_runtime_log_logentry>` logEntry **)**   |
 +-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|void         |:ref:`Clear<classwellfired_command_unity_runtime_console_developmentconsole_1a07ef03ba19139e5ba1c47610866c1a70>` **(**  **)**                                                                                        |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Public Static Methods
 ----------------------
 
-+-------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
-|void         |:ref:`Load<classwellfired_command_unity_runtime_console_developmentconsole_1a133cb0a7e9e6345c6df3e3b3d908bc0e>` **(** Type customFilterType = null **)**   |
-+-------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|void         |:ref:`Load<classwellfired_command_unity_runtime_console_developmentconsole_1a42df3fe5ea0803b807870d6bd4b0b9d1>` **(** bool clearConsoleCommandEnabled = true, bool deviceIdCommandEnabled = true, bool inspectCommandEnabled = true, bool emailLogSupportEnabled = true, bool autoScrollEnabled = true, Type customFilterType = null **)**   |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Breakdown
 ----------
-
-.. _classwellfired_command_unity_runtime_console_developmentconsole_1ab820544f8e7c7922d9c8251340a81e98:
-
-- string **ShowDotCommandButtonMessage** **{** get; set; **}**
-
-    **Description**
-
-        Set this if you would like to change the message displayed on the 'open .:ref:`Command<namespacewellfired_command>`' button. 
 
 .. _classwellfired_command_unity_runtime_console_developmentconsole_1a0db29e99e690194f423db909bcdd4cdc:
 
@@ -99,6 +97,14 @@ Breakdown
     **Description**
 
         Set this if you would like to change corner of the screen the 'open .:ref:`Command<namespacewellfired_command>`' button is located. 
+
+.. _classwellfired_command_unity_runtime_console_developmentconsole_1a2bc54d23d17e2524abc31d5b655919a8:
+
+- int **InputBlockerSortingOrder** **{** get; set; **}**
+
+    **Description**
+
+        Since .:ref:`Command<namespacewellfired_command>` is based on :ref:`Unity<namespacewellfired_command_unity>` legacy GUI, we use the new :ref:`UI<namespacewellfired_command_unity_runtime_ui>` system to block input behind the console. This property allows to set the sorting order of the canvas used to block input. It is by default in front of everyting. 
 
 .. _classwellfired_command_unity_runtime_console_developmentconsole_1a7283a0939b39103c6cf7a1128b499d7b:
 
@@ -132,17 +138,21 @@ Breakdown
 
         Has the user clicked on the Force Hide button. If so, they can re-open the console with the ~ key or by setting this value to false. 
 
-.. _classwellfired_command_unity_runtime_console_developmentconsole_1a2bc54d23d17e2524abc31d5b655919a8:
+.. _classwellfired_command_unity_runtime_console_developmentconsole_1ab820544f8e7c7922d9c8251340a81e98:
 
-- int **InputBlockerSortingOrder** **{** get; set; **}**
+- string **ShowDotCommandButtonMessage** **{** get; set; **}**
 
     **Description**
 
-        Since .:ref:`Command<namespacewellfired_command>` is based on :ref:`Unity<namespacewellfired_command_unity>` legacy GUI, we use the new :ref:`UI<namespacewellfired_command_unity_runtime_ui>` system to block input behind the console. This property allows to set the sorting order of the canvas used to block input. It is by default in front of everyting. 
+        Set this if you would like to change the message displayed on the 'open .:ref:`Command<namespacewellfired_command>`' button. 
 
 .. _classwellfired_command_unity_runtime_console_developmentconsole_1af12c87ddb890eea1c4d87c9fc7185300:
 
 - bool **JustMadeVisible** **{** get; set; **}**
+
+.. _classwellfired_command_unity_runtime_console_developmentconsole_1aeac4e5acedaa1409205b2fbbe7f9fce6:
+
+- bool **EmailLogSupportEnabled** **{** get; set; **}**
 
 .. _classwellfired_command_unity_runtime_console_developmentconsole_1adb53dae3952bd173c75ce28eee406908:
 
@@ -151,6 +161,14 @@ Breakdown
 .. _classwellfired_command_unity_runtime_console_developmentconsole_1a1f5d9d4378de014bee505c26af2118f0:
 
 - :ref:`ISkinData<interfacewellfired_command_skins_iskindata>` **SkinData** **{** get; set; **}**
+
+.. _classwellfired_command_unity_runtime_console_developmentconsole_1a9b32de2191e7d6256593d03a33481d10:
+
+- bool **AutoScroll** **{** get; set; **}**
+
+    **Description**
+
+        Scroll to last entry and auto scroll. 
 
 .. _classwellfired_command_unity_runtime_console_developmentconsole_1a25c54c0b467a4e18d9f58b98806127ee:
 
@@ -268,9 +286,17 @@ Breakdown
         |logEntry     |:ref:`Log<namespacewellfired_command_unity_runtime_log>` Entry.   |
         +-------------+------------------------------------------------------------------+
         
-.. _classwellfired_command_unity_runtime_console_developmentconsole_1a133cb0a7e9e6345c6df3e3b3d908bc0e:
+.. _classwellfired_command_unity_runtime_console_developmentconsole_1a07ef03ba19139e5ba1c47610866c1a70:
 
-- void **Load** **(** Type customFilterType = null **)**
+- void **Clear** **(**  **)**
+
+    **Description**
+
+        Clears all output in .Commands :ref:`Log<namespacewellfired_command_unity_runtime_log>` History. 
+
+.. _classwellfired_command_unity_runtime_console_developmentconsole_1a42df3fe5ea0803b807870d6bd4b0b9d1:
+
+- void **Load** **(** bool clearConsoleCommandEnabled = true, bool deviceIdCommandEnabled = true, bool inspectCommandEnabled = true, bool emailLogSupportEnabled = true, bool autoScrollEnabled = true, Type customFilterType = null **)**
 
     **Description**
 

@@ -13,18 +13,18 @@ This class is here to provide users with a single easy location to register all 
 Public Static Methods
 ----------------------
 
-+-------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|void         |:ref:`RegisterCommandsOnConsoleStartup<classwellfired_command_unity_runtime_console_commandregistration_1a9897166d2990b33b3dad24589eda482a>` **(**  **)**   |
-+-------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|void         |:ref:`UnRegisterCommandsOnConsoleExit<classwellfired_command_unity_runtime_console_commandregistration_1a551db4b9beb93b66587b1fb8e3ae58e4>` **(**  **)**    |
-+-------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
++-------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|void         |:ref:`RegisterCommandsOnConsoleStartup<classwellfired_command_unity_runtime_console_commandregistration_1a402b6cdaa7ec3eb4ed86b072038cbc8d>` **(** bool clearConsoleCommandEnabled, bool deviceIdCommandEnabled, bool inspectCommandEnabled, bool autoScrollCommandEnabled **)**   |
++-------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|void         |:ref:`UnRegisterCommandsOnConsoleExit<classwellfired_command_unity_runtime_console_commandregistration_1a551db4b9beb93b66587b1fb8e3ae58e4>` **(**  **)**                                                                                                                           |
++-------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Breakdown
 ----------
 
-.. _classwellfired_command_unity_runtime_console_commandregistration_1a9897166d2990b33b3dad24589eda482a:
+.. _classwellfired_command_unity_runtime_console_commandregistration_1a402b6cdaa7ec3eb4ed86b072038cbc8d:
 
-- void **RegisterCommandsOnConsoleStartup** **(**  **)**
+- void **RegisterCommandsOnConsoleStartup** **(** bool clearConsoleCommandEnabled, bool deviceIdCommandEnabled, bool inspectCommandEnabled, bool autoScrollCommandEnabled **)**
 
     **Description**
 
