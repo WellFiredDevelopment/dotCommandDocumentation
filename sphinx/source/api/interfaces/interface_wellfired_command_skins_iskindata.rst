@@ -14,7 +14,7 @@ Properties
 -----------
 
 +----------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+
-|:ref:`Color<structwellfired_command_skins_color>`   |:ref:`DetailedLogMessageBackgroundColor<interfacewellfired_command_skins_iskindata_1a9fd3181a56ef37dd66a36031395cd56c>` **{** get; set; **}**   |
+|:ref:`Color<structwellfired_command_skins_color>`   |:ref:`DetailedLogMessageColor<interfacewellfired_command_skins_iskindata_1ad1b97ce1baec620c163d124bc0c73f7a>` **{** get; set; **}**             |
 +----------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+
 |:ref:`Color<structwellfired_command_skins_color>`   |:ref:`MainColor<interfacewellfired_command_skins_iskindata_1a6202ab249cdcf9ed7098947e46776008>` **{** get; set; **}**                           |
 +----------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -36,11 +36,15 @@ Properties
 +----------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+
 |:ref:`Color<structwellfired_command_skins_color>`   |:ref:`EntryInfoColor<interfacewellfired_command_skins_iskindata_1a8f3bb6f9bfdea2f79b9d994766b134ef>` **{** get; set; **}**                      |
 +----------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+
+|:ref:`Color<structwellfired_command_skins_color>`   |:ref:`DetailedLogMessageBackgroundColor<interfacewellfired_command_skins_iskindata_1a9fd3181a56ef37dd66a36031395cd56c>` **{** get; set; **}**   |
++----------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+
 |:ref:`Color<structwellfired_command_skins_color>`   |:ref:`SecondaryColor<interfacewellfired_command_skins_iskindata_1a4c283e060c8811a38e2487e52aeabe9f>` **{** get; set; **}**                      |
 +----------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+
-|:ref:`Color<structwellfired_command_skins_color>`   |:ref:`DetailedLogMessageColor<interfacewellfired_command_skins_iskindata_1ad1b97ce1baec620c163d124bc0c73f7a>` **{** get; set; **}**             |
-+----------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+
 |:ref:`Color<structwellfired_command_skins_color>`   |:ref:`GeneralLabelFontColor<interfacewellfired_command_skins_iskindata_1ad18b9e73922595ac45f469023e8e3f00>` **{** get; set; **}**               |
++----------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+
+|:ref:`Color<structwellfired_command_skins_color>`   |:ref:`PlaceholderTextEntryColor<interfacewellfired_command_skins_iskindata_1a7db0ab2f3e3dcb2103ea17d96f6e67f5>` **{** get; set; **}**           |
++----------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+
+|:ref:`Color<structwellfired_command_skins_color>`   |:ref:`PlaceholderTextEntryFontColor<interfacewellfired_command_skins_iskindata_1a0d126af5b130a8f51b808cad8f4c18e7>` **{** get; set; **}**       |
 +----------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+
 |int                                                 |:ref:`FontSize<interfacewellfired_command_skins_iskindata_1ae9df1d12d973f8981926afb5a4c294b8>` **{** get; set; **}**                            |
 +----------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -66,9 +70,9 @@ Breakdown
 
 - :ref:`Color<structwellfired_command_skins_color>` **SecondaryColor** **{** get; set; **}**
 
-.. _interfacewellfired_command_skins_iskindata_1a9fd3181a56ef37dd66a36031395cd56c:
+.. _interfacewellfired_command_skins_iskindata_1ad1b97ce1baec620c163d124bc0c73f7a:
 
-- :ref:`Color<structwellfired_command_skins_color>` **DetailedLogMessageBackgroundColor** **{** get; set; **}**
+- :ref:`Color<structwellfired_command_skins_color>` **DetailedLogMessageColor** **{** get; set; **}**
 
 .. _interfacewellfired_command_skins_iskindata_1a5d5ae128e1f63682e4494d9b6d044f3e:
 
@@ -106,17 +110,25 @@ Breakdown
 
 - :ref:`Color<structwellfired_command_skins_color>` **EntryInfoColor** **{** get; set; **}**
 
+.. _interfacewellfired_command_skins_iskindata_1a9fd3181a56ef37dd66a36031395cd56c:
+
+- :ref:`Color<structwellfired_command_skins_color>` **DetailedLogMessageBackgroundColor** **{** get; set; **}**
+
 .. _interfacewellfired_command_skins_iskindata_1a6202ab249cdcf9ed7098947e46776008:
 
 - :ref:`Color<structwellfired_command_skins_color>` **MainColor** **{** get; set; **}**
 
-.. _interfacewellfired_command_skins_iskindata_1ad1b97ce1baec620c163d124bc0c73f7a:
-
-- :ref:`Color<structwellfired_command_skins_color>` **DetailedLogMessageColor** **{** get; set; **}**
-
 .. _interfacewellfired_command_skins_iskindata_1ad18b9e73922595ac45f469023e8e3f00:
 
 - :ref:`Color<structwellfired_command_skins_color>` **GeneralLabelFontColor** **{** get; set; **}**
+
+.. _interfacewellfired_command_skins_iskindata_1a7db0ab2f3e3dcb2103ea17d96f6e67f5:
+
+- :ref:`Color<structwellfired_command_skins_color>` **PlaceholderTextEntryColor** **{** get; set; **}**
+
+.. _interfacewellfired_command_skins_iskindata_1a0d126af5b130a8f51b808cad8f4c18e7:
+
+- :ref:`Color<structwellfired_command_skins_color>` **PlaceholderTextEntryFontColor** **{** get; set; **}**
 
 .. _interfacewellfired_command_skins_iskindata_1ae9df1d12d973f8981926afb5a4c294b8:
 

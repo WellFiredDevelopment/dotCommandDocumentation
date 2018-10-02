@@ -17,7 +17,7 @@ Properties
 -----------
 
 +----------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+
-|:ref:`Color<structwellfired_command_skins_color>`   |:ref:`DetailedLogMessageBackgroundColor<classwellfired_command_skins_skindata_1ad0790293068e3bada3baa42c4b3e619c>` **{** get; set; **}**   |
+|:ref:`Color<structwellfired_command_skins_color>`   |:ref:`DetailedLogMessageColor<classwellfired_command_skins_skindata_1a71861389389b21ef99918be87ba10680>` **{** get; set; **}**             |
 +----------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+
 |:ref:`Color<structwellfired_command_skins_color>`   |:ref:`MainColor<classwellfired_command_skins_skindata_1a3abc16029194da5a2e4843db1012b3ef>` **{** get; set; **}**                           |
 +----------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+
@@ -39,11 +39,15 @@ Properties
 +----------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+
 |:ref:`Color<structwellfired_command_skins_color>`   |:ref:`EntryInfoColor<classwellfired_command_skins_skindata_1ad47e376dde0378348a9b14b3b2da7506>` **{** get; set; **}**                      |
 +----------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+
+|:ref:`Color<structwellfired_command_skins_color>`   |:ref:`DetailedLogMessageBackgroundColor<classwellfired_command_skins_skindata_1ad0790293068e3bada3baa42c4b3e619c>` **{** get; set; **}**   |
++----------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+
 |:ref:`Color<structwellfired_command_skins_color>`   |:ref:`SecondaryColor<classwellfired_command_skins_skindata_1aa93fae1492b47dbc825edabbfeb360a6>` **{** get; set; **}**                      |
 +----------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+
-|:ref:`Color<structwellfired_command_skins_color>`   |:ref:`DetailedLogMessageColor<classwellfired_command_skins_skindata_1a71861389389b21ef99918be87ba10680>` **{** get; set; **}**             |
-+----------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+
 |:ref:`Color<structwellfired_command_skins_color>`   |:ref:`GeneralLabelFontColor<classwellfired_command_skins_skindata_1a57f114c63693de7289fce26ccec07074>` **{** get; set; **}**               |
++----------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+
+|:ref:`Color<structwellfired_command_skins_color>`   |:ref:`PlaceholderTextEntryColor<classwellfired_command_skins_skindata_1acd1710bab80fed7962daa35a1a6ec954>` **{** get; set; **}**           |
++----------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+
+|:ref:`Color<structwellfired_command_skins_color>`   |:ref:`PlaceholderTextEntryFontColor<classwellfired_command_skins_skindata_1a3bcb482ad052def2c6e3592b26a8bad2>` **{** get; set; **}**       |
 +----------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+
 |int                                                 |:ref:`FontSize<classwellfired_command_skins_skindata_1a82dd45fe077d2d3e64ffab8c8a6a7ea1>` **{** get; set; **}**                            |
 +----------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+
@@ -76,9 +80,9 @@ Breakdown
 
 - :ref:`Color<structwellfired_command_skins_color>` **SecondaryColor** **{** get; set; **}**
 
-.. _classwellfired_command_skins_skindata_1ad0790293068e3bada3baa42c4b3e619c:
+.. _classwellfired_command_skins_skindata_1a71861389389b21ef99918be87ba10680:
 
-- :ref:`Color<structwellfired_command_skins_color>` **DetailedLogMessageBackgroundColor** **{** get; set; **}**
+- :ref:`Color<structwellfired_command_skins_color>` **DetailedLogMessageColor** **{** get; set; **}**
 
 .. _classwellfired_command_skins_skindata_1a89e833b4113e60b93b8c5b3343b2f92f:
 
@@ -116,17 +120,25 @@ Breakdown
 
 - :ref:`Color<structwellfired_command_skins_color>` **EntryInfoColor** **{** get; set; **}**
 
+.. _classwellfired_command_skins_skindata_1ad0790293068e3bada3baa42c4b3e619c:
+
+- :ref:`Color<structwellfired_command_skins_color>` **DetailedLogMessageBackgroundColor** **{** get; set; **}**
+
 .. _classwellfired_command_skins_skindata_1a3abc16029194da5a2e4843db1012b3ef:
 
 - :ref:`Color<structwellfired_command_skins_color>` **MainColor** **{** get; set; **}**
 
-.. _classwellfired_command_skins_skindata_1a71861389389b21ef99918be87ba10680:
-
-- :ref:`Color<structwellfired_command_skins_color>` **DetailedLogMessageColor** **{** get; set; **}**
-
 .. _classwellfired_command_skins_skindata_1a57f114c63693de7289fce26ccec07074:
 
 - :ref:`Color<structwellfired_command_skins_color>` **GeneralLabelFontColor** **{** get; set; **}**
+
+.. _classwellfired_command_skins_skindata_1acd1710bab80fed7962daa35a1a6ec954:
+
+- :ref:`Color<structwellfired_command_skins_color>` **PlaceholderTextEntryColor** **{** get; set; **}**
+
+.. _classwellfired_command_skins_skindata_1a3bcb482ad052def2c6e3592b26a8bad2:
+
+- :ref:`Color<structwellfired_command_skins_color>` **PlaceholderTextEntryFontColor** **{** get; set; **}**
 
 .. _classwellfired_command_skins_skindata_1a82dd45fe077d2d3e64ffab8c8a6a7ea1:
 

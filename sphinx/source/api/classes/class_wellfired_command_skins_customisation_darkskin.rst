@@ -17,7 +17,7 @@ Properties
 -----------
 
 +----------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
-|:ref:`Color<structwellfired_command_skins_color>`   |:ref:`DetailedLogMessageBackgroundColor<classwellfired_command_skins_customisation_darkskin_1a3e8a995f630f6231aba2059c2f883f2a>` **{** get; set; **}**   |
+|:ref:`Color<structwellfired_command_skins_color>`   |:ref:`DetailedLogMessageColor<classwellfired_command_skins_customisation_darkskin_1a34dfd42bb58df667460e60026a3a13ff>` **{** get; set; **}**             |
 +----------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
 |:ref:`Color<structwellfired_command_skins_color>`   |:ref:`ButtonColor<classwellfired_command_skins_customisation_darkskin_1a825d2826e8ab57b0cde7439e141ce6e0>` **{** get; set; **}**                         |
 +----------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -39,11 +39,15 @@ Properties
 +----------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
 |:ref:`Color<structwellfired_command_skins_color>`   |:ref:`EntryInfoColor<classwellfired_command_skins_customisation_darkskin_1a7dd095c0e76abab808c64f591d15557b>` **{** get; set; **}**                      |
 +----------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
+|:ref:`Color<structwellfired_command_skins_color>`   |:ref:`DetailedLogMessageBackgroundColor<classwellfired_command_skins_customisation_darkskin_1a3e8a995f630f6231aba2059c2f883f2a>` **{** get; set; **}**   |
++----------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
 |:ref:`Color<structwellfired_command_skins_color>`   |:ref:`ButtonHoverColor<classwellfired_command_skins_customisation_darkskin_1afb0324fa0b3b3895f96a5998da7cb685>` **{** get; set; **}**                    |
 +----------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
-|:ref:`Color<structwellfired_command_skins_color>`   |:ref:`DetailedLogMessageColor<classwellfired_command_skins_customisation_darkskin_1a34dfd42bb58df667460e60026a3a13ff>` **{** get; set; **}**             |
-+----------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
 |:ref:`Color<structwellfired_command_skins_color>`   |:ref:`GeneralLabelFontColor<classwellfired_command_skins_customisation_darkskin_1a20bc331d824ab81fd7a81c3c04ef3dfd>` **{** get; set; **}**               |
++----------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
+|:ref:`Color<structwellfired_command_skins_color>`   |:ref:`PlaceholderTextEntryColor<classwellfired_command_skins_customisation_darkskin_1a037bc49d0d529973e687ec9425fd9726>` **{** get; set; **}**           |
++----------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
+|:ref:`Color<structwellfired_command_skins_color>`   |:ref:`PlaceholderTextEntryFontColor<classwellfired_command_skins_customisation_darkskin_1af020736403507b2393b821ab85d8df3c>` **{** get; set; **}**       |
 +----------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
 |int                                                 |:ref:`FontSize<classwellfired_command_skins_customisation_darkskin_1a2d228764825039861ebc02d804864e24>` **{** get; set; **}**                            |
 +----------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -69,9 +73,9 @@ Breakdown
 
 - :ref:`Color<structwellfired_command_skins_color>` **ButtonHoverColor** **{** get; set; **}**
 
-.. _classwellfired_command_skins_customisation_darkskin_1a3e8a995f630f6231aba2059c2f883f2a:
+.. _classwellfired_command_skins_customisation_darkskin_1a34dfd42bb58df667460e60026a3a13ff:
 
-- :ref:`Color<structwellfired_command_skins_color>` **DetailedLogMessageBackgroundColor** **{** get; set; **}**
+- :ref:`Color<structwellfired_command_skins_color>` **DetailedLogMessageColor** **{** get; set; **}**
 
 .. _classwellfired_command_skins_customisation_darkskin_1a1e3ab7c580618f173f98a8c982889deb:
 
@@ -109,17 +113,25 @@ Breakdown
 
 - :ref:`Color<structwellfired_command_skins_color>` **EntryInfoColor** **{** get; set; **}**
 
+.. _classwellfired_command_skins_customisation_darkskin_1a3e8a995f630f6231aba2059c2f883f2a:
+
+- :ref:`Color<structwellfired_command_skins_color>` **DetailedLogMessageBackgroundColor** **{** get; set; **}**
+
 .. _classwellfired_command_skins_customisation_darkskin_1a825d2826e8ab57b0cde7439e141ce6e0:
 
 - :ref:`Color<structwellfired_command_skins_color>` **ButtonColor** **{** get; set; **}**
 
-.. _classwellfired_command_skins_customisation_darkskin_1a34dfd42bb58df667460e60026a3a13ff:
-
-- :ref:`Color<structwellfired_command_skins_color>` **DetailedLogMessageColor** **{** get; set; **}**
-
 .. _classwellfired_command_skins_customisation_darkskin_1a20bc331d824ab81fd7a81c3c04ef3dfd:
 
 - :ref:`Color<structwellfired_command_skins_color>` **GeneralLabelFontColor** **{** get; set; **}**
+
+.. _classwellfired_command_skins_customisation_darkskin_1a037bc49d0d529973e687ec9425fd9726:
+
+- :ref:`Color<structwellfired_command_skins_color>` **PlaceholderTextEntryColor** **{** get; set; **}**
+
+.. _classwellfired_command_skins_customisation_darkskin_1af020736403507b2393b821ab85d8df3c:
+
+- :ref:`Color<structwellfired_command_skins_color>` **PlaceholderTextEntryFontColor** **{** get; set; **}**
 
 .. _classwellfired_command_skins_customisation_darkskin_1a2d228764825039861ebc02d804864e24:
 
