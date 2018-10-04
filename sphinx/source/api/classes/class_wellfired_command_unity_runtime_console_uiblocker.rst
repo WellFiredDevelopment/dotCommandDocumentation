@@ -14,13 +14,17 @@ Public Methods
 ---------------
 
 +-------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
-|             |:ref:`UIBlocker<classwellfired_command_unity_runtime_console_uiblocker_1aa82e9c21641d8178f671580cbdbddc8f>` **(** Transform parent **)**         |
+|void         |:ref:`UnblockConsoleArea<classwellfired_command_unity_runtime_console_uiblocker_1a2ea554f705268344e132525901e5895e>` **(**  **)**                |
 +-------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
-|void         |:ref:`SetSortingOrder<classwellfired_command_unity_runtime_console_uiblocker_1ab3e5dca3e749fc4e281ec3bfb3b08716>` **(** int sortingOrder **)**   |
+|             |:ref:`UIBlocker<classwellfired_command_unity_runtime_console_uiblocker_1aa82e9c21641d8178f671580cbdbddc8f>` **(** Transform parent **)**         |
 +-------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
 |void         |:ref:`BlockOpenConsoleArea<classwellfired_command_unity_runtime_console_uiblocker_1a6ff1669b626a6aab5dd93719263fe84e>` **(** Rect rect **)**     |
 +-------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+|void         |:ref:`UnblockOpenConsoleArea<classwellfired_command_unity_runtime_console_uiblocker_1a986703d808f83d53a8c023a594fa0b62>` **(**  **)**            |
++-------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
 |void         |:ref:`BlockConsoleArea<classwellfired_command_unity_runtime_console_uiblocker_1a89e4eba4f3856440d654f3e6b01e97e1>` **(** Rect rect **)**         |
++-------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+|void         |:ref:`SetSortingOrder<classwellfired_command_unity_runtime_console_uiblocker_1ab3e5dca3e749fc4e281ec3bfb3b08716>` **(** int sortingOrder **)**   |
 +-------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
 |void         |:ref:`BlockFilterArea<classwellfired_command_unity_runtime_console_uiblocker_1ad509996ce0b720ac1d28e917a80ff42c>` **(** Rect rect **)**          |
 +-------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -36,10 +40,6 @@ Public Methods
 Breakdown
 ----------
 
-.. _classwellfired_command_unity_runtime_console_uiblocker_1aa82e9c21641d8178f671580cbdbddc8f:
-
--  **UIBlocker** **(** Transform parent **)**
-
 .. _classwellfired_command_unity_runtime_console_uiblocker_1ab3e5dca3e749fc4e281ec3bfb3b08716:
 
 - void **SetSortingOrder** **(** int sortingOrder **)**
@@ -54,6 +54,10 @@ Breakdown
         |sortingOrder   |
         +---------------+
         
+.. _classwellfired_command_unity_runtime_console_uiblocker_1a2ea554f705268344e132525901e5895e:
+
+- void **UnblockConsoleArea** **(**  **)**
+
 .. _classwellfired_command_unity_runtime_console_uiblocker_1a6ff1669b626a6aab5dd93719263fe84e:
 
 - void **BlockOpenConsoleArea** **(** Rect rect **)**
@@ -68,6 +72,10 @@ Breakdown
         |rect         |
         +-------------+
         
+.. _classwellfired_command_unity_runtime_console_uiblocker_1a986703d808f83d53a8c023a594fa0b62:
+
+- void **UnblockOpenConsoleArea** **(**  **)**
+
 .. _classwellfired_command_unity_runtime_console_uiblocker_1a89e4eba4f3856440d654f3e6b01e97e1:
 
 - void **BlockConsoleArea** **(** Rect rect **)**
@@ -82,6 +90,10 @@ Breakdown
         |rect         |
         +-------------+
         
+.. _classwellfired_command_unity_runtime_console_uiblocker_1aa82e9c21641d8178f671580cbdbddc8f:
+
+-  **UIBlocker** **(** Transform parent **)**
+
 .. _classwellfired_command_unity_runtime_console_uiblocker_1ad509996ce0b720ac1d28e917a80ff42c:
 
 - void **BlockFilterArea** **(** Rect rect **)**
