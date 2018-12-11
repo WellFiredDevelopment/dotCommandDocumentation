@@ -1,7 +1,7 @@
 .Command Documentation
 ======================
 
-Welcome to the official documentation for .Command a powerful Command Line Processor for Unity Applications.
+Welcome to the official documentation for `.Command <https://wellfired.com/dotcommand/dotcommand/>`_ a powerful Command Line Processor for Unity Applications.
 
 If you are reading the .pdf version of this documentation, you may find the online version easier to navigate. 
 It is accessible on `https://dotcommand-documentation.readthedocs.io/en/latest/ <https://dotcommand-documentation.readthedocs.io/en/latest/>`_.
